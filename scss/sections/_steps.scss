@@ -1,0 +1,25 @@
+.steps {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.steps__block {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+
+  .steps__text-block{
+    padding: 2rem;
+    color: aliceblue;
+
+    h2 {
+      color: #d5c7ac;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  img {
+    width: 30%;
+  }
+}

@@ -1,0 +1,31 @@
+@use '../var';
+
+.app {
+  background: #252933;
+  text-align: center;
+  color: var.$col-text;
+  box-shadow: -1rem 0 3rem #000;
+
+  h2 {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  p {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+.app__store {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 1.5rem 0;
+
+  img {
+    display: block;
+    width: 20%;
+  }
+}

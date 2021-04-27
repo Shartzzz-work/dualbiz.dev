@@ -1,0 +1,30 @@
+.plus {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #bac2cf;
+  padding: 3rem 1.5rem;
+}
+
+.plus__block {
+  max-width: 30rem;
+  padding: 2rem;
+  margin: 1rem;
+  background: #252933;
+  box-shadow: -1rem 0 3rem #000;
+
+  h2 {
+    padding-bottom: 1rem;
+    color: #d5c7ac;
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 2rem;
+    max-height: 20rem;
+  }
+}
