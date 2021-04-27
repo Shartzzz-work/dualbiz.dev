@@ -224,16 +224,12 @@ header {
   text-align: center;
 }
 .plus__block img {
+  display: block;
   margin: 0 auto;
   padding-top: 2rem;
   max-height: 20rem;
 }
 
-@media screen and (max-width: 370px) {
-  .plus__block img {
-    width: 100%;
-  }
-}
 .trio {
   background: #252933;
 }
@@ -296,21 +292,6 @@ header {
   width: 30%;
 }
 
-@media screen and (max-width: 600px) {
-  .steps {
-    padding: 2rem 0;
-  }
-
-  .steps__block {
-    flex-direction: column;
-  }
-  .steps__block img {
-    display: none;
-  }
-  .steps__block .steps__text-block {
-    padding: 0;
-  }
-}
 .app {
   background: #252933;
   text-align: center;
@@ -336,26 +317,8 @@ header {
 .app__store img {
   display: block;
   width: 20%;
-  min-width: 10rem;
 }
 
-@media screen and (max-width: 600px) {
-  .app p {
-    display: none;
-  }
-  .app h2 {
-    font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 600px) {
-  .app h2 {
-    font-size: 1rem;
-  }
-
-  .app__store img {
-    min-width: 8rem;
-  }
-}
 body {
   background: #313745;
 }

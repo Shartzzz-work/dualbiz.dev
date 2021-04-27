@@ -27,5 +27,32 @@
   img {
     display: block;
     width: 20%;
+    min-width: 10rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    p {
+      display: none;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    h2 {
+      font-size: 1rem;
+    }
+  }
+
+  .app__store {
+    img {
+      min-width: 8rem;
+    }
   }
 }

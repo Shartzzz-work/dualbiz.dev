@@ -10,7 +10,7 @@
   align-items: center;
   padding: 2rem;
 
-  .steps__text-block{
+  .steps__text-block {
     padding: 2rem;
     color: aliceblue;
 
@@ -22,5 +22,24 @@
 
   img {
     width: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .steps {
+    padding: 2rem 0;
+  }
+
+  .steps__block {
+    flex-direction: column;
+
+    img {
+      display: none;
+    }
+
+    .steps__text-block {
+      padding: 0 ;
+    }
+
   }
 }

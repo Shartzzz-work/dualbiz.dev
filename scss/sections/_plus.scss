@@ -22,9 +22,17 @@
   }
 
   img {
-    display: block;
+    // display: block;
     margin: 0 auto;
     padding-top: 2rem;
     max-height: 20rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .plus__block {
+    img {
+      width: 100%;
+    }
   }
 }
