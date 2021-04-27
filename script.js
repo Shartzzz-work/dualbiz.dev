@@ -62,22 +62,34 @@
 
 class NavEvent {
   handleEvent(event) {
+
+    let dropdown = document.createElement('div');
+    dropdown.className = "nav__dropdown";
+
     switch (event.type) {
       case 'click':
         console.log("кликнули", event.target);
-        if (event.target.classList.contains('hamburger')) {
+        if (event.target.classList.contains('hamburger') || event.target.classList.contains('bar')) {
           document.querySelector(".hamburger").classList.toggle("active");
           document.querySelector(".nav__menu").classList.toggle("active");
         }
         break;
       case 'mouseover':
+        // if (event.target.classList.contains('nav__user-img')) {
+        //   document.querySelector(".nav__dropdown").style.display = 'block';
+        // }
         if (event.target.classList.contains('nav__user-img')) {
-          document.querySelector(".nav__dropdown").style.display = 'block';
+          console.log("hi");
+          header.append(dropdown);
+        }
+        if (event.target.classList.contains('settings_icon')) {
+          header.append(dropdown);
         }
         break;
       case 'mouseout':
-        if (event.target.classList.contains('nav__user-img')) {
-          document.querySelector(".nav__dropdown").style.display = 'none';
+        if (event.target.id === "header") {
+          // document.querySelector(".nav__dropdown").style.display = 'none';
+          document.querySelector(".nav__dropdown").remove();
         }
         break;
     }

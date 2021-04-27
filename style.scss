@@ -50,6 +50,7 @@ header {
 
     .nav__user-img {
       height: 100%;
+      margin: 0.5rem;
     }
 
     .nav__user-img:hover {
@@ -64,7 +65,7 @@ header {
   }
 
   .nav__dropdown {
-    display: none;
+    // display: none;
     position: absolute;
     right: 1.5rem;
     top: 100%;
