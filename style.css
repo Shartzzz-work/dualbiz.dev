@@ -177,6 +177,13 @@ header {
   color: #bac2cf;
   margin-bottom: 2rem;
 }
+.about .about__text a {
+  color: #feefad;
+  font-weight: 600;
+}
+.about .about__text a:hover {
+  text-decoration: solid underline 2px;
+}
 .about .about__text h1 {
   font-size: 4em;
   margin-bottom: 1rem;
@@ -240,26 +247,31 @@ header {
   max-width: 25rem;
   padding: 1.5rem;
   margin: 2rem 0;
-  background: #e7e3e3;
+  background: #4d4960;
   border-radius: 12px;
+  color: #bac2cf;
 }
 .trio__block h3 {
   padding-bottom: 0.5rem;
+  color: #d5c7ac;
 }
 
 .trio__block-img {
+  position: relative;
   height: 15rem;
 }
 .trio__block-img img {
+  position: absolute;
+  height: 100%;
   width: 100%;
-  max-height: 15rem;
-  object-fit: cover;
+  object-fit: scale-down;
   padding-bottom: 2rem;
 }
 
 .steps {
   max-width: 1300px;
   margin: 0 auto;
+  padding: 10rem 0;
 }
 
 .steps__block {
