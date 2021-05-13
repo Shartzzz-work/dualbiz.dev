@@ -25,6 +25,7 @@ header {
 .nav__menu {
   display: flex;
   justify-content: space-between;
+  z-index: 2;
 
   .nav-item {
     margin-left: 2rem;
@@ -37,6 +38,12 @@ header {
   }
 
   .nav-link:hover {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: solid underline var.$col-logo 4px;
+  }
+
+  .nav-link-active {
     font-weight: bold;
     color: #fff;
     text-decoration: solid underline var.$col-logo 4px;

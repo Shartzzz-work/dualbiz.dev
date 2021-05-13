@@ -38,4 +38,12 @@
     object-fit: scale-down;
     padding-bottom: 2rem;
   }
+
+  .trio__img-logo {
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: -55%;
+    // object-fit: cover;
+  }
 }

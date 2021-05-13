@@ -26,4 +26,3 @@ let navEvent = new NavEvent;
 header.addEventListener('click', navEvent);
 header.addEventListener('mouseover', navEvent);
 header.addEventListener('mouseout', navEvent);
-

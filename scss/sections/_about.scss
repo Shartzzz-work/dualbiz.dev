@@ -1,17 +1,7 @@
-@mixin boxShadow($colour, $length) {
-  $value: ();
-  @for $i from 1 through $length {
-    $px: $i + px;
-    $shadow: $px $px $colour;
-    $value: append($value, $shadow, comma);
-  }
-  text-shadow: $value;
-}
-
 .about {
   max-width: 1440px;
   margin: auto;
-  padding: 3rem 1.5rem 0;
+  padding: 0 1.5rem;
   text-align: center;
 
   .about__text {
@@ -28,30 +18,7 @@
     a:hover {
       text-decoration: solid underline 2px;
     }
-
-    h1 {
-      font-size: 4em;
-      margin-bottom: 1rem;
-      // font-size: 100px;
-      font-weight: 900;
-      color: #feefad;
-      @include boxShadow(#252933, 1000);
-    }
   }
-
-  // .about__app {
-  //   background-image: url(assets/img/002.png);
-  //   background-position: bottom;
-  //   background-repeat: no-repeat;
-  //   background-size: contain;
-  //   height: 20rem;
-  //   margin: auto;
-  //   max-width: 800px;
-  //   display: grid;
-  //   grid-template-columns: auto auto;
-  //   justify-content: space-around;
-  //   align-items: center;
-  // }
 }
 
 .about__img {

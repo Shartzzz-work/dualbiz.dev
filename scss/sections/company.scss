@@ -1,0 +1,181 @@
+@use '../var';
+
+// #company {
+//   // background-image: linear-gradient(147deg, #ffe53b 0%, #fd3838 74%);
+// }
+
+.company__search {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+
+  .search_country {
+    height: 2rem;
+    background: none;
+    height: 3rem;
+    border: 4px solid #ffffff;
+    width: 20%;
+    color: #fff;
+    font-size: 1.5rem;
+
+    option {
+      color: #000;
+    }
+  }
+
+  .search_city {
+    width: 50%;
+    height: 3rem;
+    border: 4px solid #ffffff;
+    background: none;
+    color: #fff;
+    font-size: 1.7rem;
+  }
+}
+
+.search_city::placeholder {
+  color: #fff;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+.company {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  padding: 0 1.5rem 3rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.company__card {
+  height: 300px;
+
+  .card_user {
+    position: absolute;
+    top: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1em 1em;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: var.$col-dark;
+    padding: 1rem;
+
+    .card_contacts {
+      display: flex;
+      gap: 2rem;
+      justify-content: space-evenly;
+      flex-direction: column;
+      background: rgba(255, 255, 255, 0.568);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(5px);
+      padding: 0.2rem 1rem;
+      border-radius: 0.5rem;
+
+      a {
+        font-weight: 600;
+        text-decoration: underline;
+        color: var.$col-dark;
+      }
+    }
+  }
+
+  .card_name {
+    padding-bottom: 1rem;
+  }
+
+  .card_settings {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    column-gap: 5rem;
+    justify-items: center;
+
+    img {
+      width: 60%;
+    }
+  }
+
+  .card_avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 10rem;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    animation: pulse 2s infinite;
+
+    i {
+      font-size: 3rem;
+    }
+
+    img {
+      padding: 1rem;
+      object-fit: contain;
+    }
+  }
+}
+
+// .company__card {
+//   // padding: 1rem;
+//   border-radius: 1rem;
+// }
+
+.company__card {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  box-shadow: -1rem 0 3rem #000;
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .company {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+.footer {
+  background-color: #d22d4b;
+}
+
+.circle-chart-circle {
+  animation: circle-chart-fill 1s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.circle-chart-info {
+  animation: circle-chart-appear 100ms forwards;
+  opacity: 0;
+  transform: translateY(0.3em);
+}
+@keyframes circle-chart-fill {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+@keyframes circle-chart-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

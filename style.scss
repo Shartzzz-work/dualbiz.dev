@@ -1,3 +1,5 @@
+@use 'scss/mixin';
+
 @use 'scss/reset';
 @use 'scss/sections/header';
 @use 'scss/sections/about';
@@ -5,8 +7,29 @@
 @use 'scss/sections/trio';
 @use 'scss/sections/steps';
 @use 'scss/sections/app';
+@use 'scss/sections/business';
+@use 'scss/sections/company';
 
 body {
   background: #313745;
 }
 
+main {
+  height: 100%;
+}
+
+.title__shadow {
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  color: #feefad;
+  @include mixin.boxShadow(#252933, 1000);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.568);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+}
