@@ -1,9 +1,5 @@
 @use '../var';
 
-// #company {
-//   // background-image: linear-gradient(147deg, #ffe53b 0%, #fd3838 74%);
-// }
-
 .company__search {
   display: flex;
   justify-content: space-between;
@@ -12,10 +8,9 @@
   padding: 3rem 1.5rem;
 
   .search_country {
-    height: 2rem;
     background: none;
     height: 3rem;
-    border: 4px solid #ffffff;
+    border: 2px solid #ffffff;
     width: 20%;
     color: #fff;
     font-size: 1.5rem;
@@ -28,7 +23,7 @@
   .search_city {
     width: 50%;
     height: 3rem;
-    border: 4px solid #ffffff;
+    border: 2px solid #ffffff;
     background: none;
     color: #fff;
     font-size: 1.7rem;
@@ -43,139 +38,132 @@
 
 .company {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 1.5rem;
   row-gap: 1.5rem;
   padding: 0 1.5rem 3rem;
   max-width: 1300px;
   margin: 0 auto;
-}
 
-.company__card {
-  height: 300px;
+  .card__img {
+    position: relative;
+    background-image: url(assets/img/prstar4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    border-radius: 1rem 1rem 0 0;
 
-  .card_user {
-    position: absolute;
-    top: 0;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 1em 1em;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    height: 100%;
+  }
+
+  .glass {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    color: var.$col-dark;
+    height: 70%;
     padding: 1rem;
+    border-radius: 0.5rem;
 
-    .card_contacts {
+    :nth-child(1),
+    :nth-child(2) {
       display: flex;
-      gap: 2rem;
-      justify-content: space-evenly;
       flex-direction: column;
-      background: rgba(255, 255, 255, 0.568);
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(5px);
-      padding: 0.2rem 1rem;
-      border-radius: 0.5rem;
-
-      a {
-        font-weight: 600;
-        text-decoration: underline;
-        color: var.$col-dark;
-      }
+      align-items: center;
     }
-  }
 
-  .card_name {
-    padding-bottom: 1rem;
-  }
+    :nth-child(1)::after {
+      content: "Добавить в мой круг";
+      font-size: 0.8rem;
+    }
 
-  .card_settings {
-    padding-top: 1rem;
-    display: grid;
-    grid-template-columns: repeat(2, 3fr);
-    column-gap: 5rem;
-    justify-items: center;
+    :nth-child(2)::after {
+      content: "Удалить из моего круга";
+      font-size: 0.8rem;
+    }
 
     img {
-      width: 60%;
+      width: 5rem;
     }
   }
 
-  .card_avatar {
+  label {
+    padding-left: 1rem;
+  }
+
+  .progress__bar {
+    position: relative;
+    border-radius: 0;
+
+    p {
+      position: absolute;
+      top: 0;
+      right: 0.5rem;
+      color: var.$col-text;
+      font-size: 0.9rem;
+    }
+
+    span {
+      border-radius: 0;
+    }
+  }
+
+  .card__block {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 10rem;
-    height: 10rem;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    animation: pulse 2s infinite;
-
-    i {
-      font-size: 3rem;
-    }
-
-    img {
-      padding: 1rem;
-      object-fit: contain;
-    }
-  }
-}
-
-// .company__card {
-//   // padding: 1rem;
-//   border-radius: 1rem;
-// }
-
-.company__card {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  box-shadow: -1rem 0 3rem #000;
-
-  img {
-    object-fit: cover;
     height: 100%;
-    width: 100%;
+    padding: 1rem;
+
+    a {
+      font-size: 2rem;
+      text-align: center;
+      font-weight: 700;
+      color: var.$col-dark;
+    }
+
+    p {
+      padding: 1rem 0;
+      border-bottom: solid 2px #000;
+    }
   }
 }
 
-@media screen and (max-width: 800px) {
-  .company {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
+.map {
+  padding-top: 1rem;
+  width: 100%;
+  height: 200px;
+  border: 0;
 }
 
 .footer {
-  background-color: #d22d4b;
+  background-color: var.$col-dark;
+  text-align: center;
+  padding: 1rem;
+  color: var.$col-text;
+
+  h2 {
+    padding-bottom: 1rem;
+  }
+
+  .button {
+    max-width: 300px;
+    height: 3rem;
+    background: #46567a;
+    border-bottom: solid 4px #627295;
+  }
+
+  .button:active {
+    transform: translateY(4px);
+    border-bottom: none;
+  }
 }
 
-.circle-chart-circle {
-  animation: circle-chart-fill 1s reverse;
-  transform: rotate(-90deg);
-  transform-origin: center;
-}
-.circle-chart-info {
-  animation: circle-chart-appear 100ms forwards;
-  opacity: 0;
-  transform: translateY(0.3em);
-}
-@keyframes circle-chart-fill {
-  to {
-    stroke-dasharray: 0 100;
-  }
-}
-@keyframes circle-chart-appear {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+#rejected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
 }

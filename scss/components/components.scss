@@ -1,0 +1,57 @@
+@use '../var';
+@use '../mixin';
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: var.$col-icon;
+  color: #fff;
+  border-bottom: solid 4px var.$col-logo;
+  border-radius: 3px;
+  width: 100%;
+  text-align: center;
+}
+
+.progress__bar {
+  background-color: var.$col-dark;
+  height: 25px;
+  width: 100%;
+  border-radius: 5px;
+
+  span {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    border-radius: 3px;
+    background-color: var.$col-logo;
+    animation: bar 2s;
+
+    i {
+      position: absolute;
+      padding-left: 0.5rem;
+    }
+  }
+
+  @keyframes bar {
+    0% {
+      width: 0;
+    }
+  }
+}
+
+.title__shadow {
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  color: #feefad;
+  @include mixin.boxShadow(#252933, 1000);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.568);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+}

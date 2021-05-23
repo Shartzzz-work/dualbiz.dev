@@ -1,0 +1,148 @@
+@use '../var';
+
+.circle {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .card {
+    height: 300px;
+    width: 100%;
+    box-shadow: -1rem 0 3rem #000;
+    grid-template-columns: 35% 50% 15%;
+
+    .card__block {
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 0 2rem;
+      border-right: var.$col_bg solid 3px;
+
+      h2 {
+        text-align: center;
+      }
+
+      a {
+        color: var.$col-icon;
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-decoration: var.$col-icon 2px underline;
+      }
+
+      p:nth-child(2) {
+        padding: 1rem 0;
+      }
+      p:nth-child(3),
+      :nth-child(6) {
+        display: inline-block;
+        padding: 0.5rem 0;
+      }
+
+      :nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+
+        :nth-child(2) {
+          background: var.$col-logo;
+          color: var.$col-dark;
+          border-bottom: solid 4px var.$col-icon;
+        }
+      }
+
+      .button {
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 48%;
+        font-size: 1rem;
+      }
+    }
+
+    .block_actions {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 1rem;
+      text-align: center;
+
+      :nth-child(1),
+      :nth-child(2),
+      :nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          height: 3rem;
+        }
+      }
+
+      :nth-child(1)::after {
+        content: "отправить сообщение";
+        font-size: 0.8rem;
+      }
+
+      :nth-child(2)::after {
+        content: "удалить из круга";
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .card-img {
+    object-fit: cover;
+    border-radius: 1rem 0 0 1rem;
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.circle__choice {
+  padding-top: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+
+  .button {
+    background: #46567a;
+    border-bottom: solid 4px #627295;
+  }
+
+  .button:active {
+    transform: translateY(4px);
+    border-bottom: none;
+  }
+
+  .choice-active {
+    background: var.$col-logo;
+    border-bottom: solid 4px var.$col-text;
+    color: var.$col-dark;
+    font-weight: 600;
+    box-shadow: -1rem 0 3rem #000;
+  }
+
+  :nth-child(1):hover,
+  :nth-child(2):hover,
+  :nth-child(3):hover {
+    box-shadow: -1rem 0 3rem #000;
+  }
+}
+
+.circle__choiceme {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  font-size: 2rem;
+  color: var.$col-text;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

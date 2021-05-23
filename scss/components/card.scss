@@ -1,0 +1,16 @@
+@use '../var';
+
+.card {
+  display: grid;
+  background: var.$col-text;
+  border-radius: 1rem;
+}
+
+.card__img {
+  width: 100%;
+  height: auto;
+}
+
+.card__block {
+  display: flex;
+}

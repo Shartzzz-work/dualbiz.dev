@@ -1,0 +1,60 @@
+@use '../var';
+
+.tasks {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+
+  .card {
+    grid-template-columns: 25% 50% 25%;
+    // justify-content: space-between;
+    height: 200px;
+    width: 100%;
+    margin-top: 2rem;
+
+    .card__img {
+      place-self: center;
+      padding: 1rem;
+    }
+
+    .card__block {
+      flex-direction: column;
+      justify-content: space-around;
+
+      h2 {
+        padding-bottom: 1rem;
+      }
+    }
+
+    .block_actions {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      border-left: solid 2px var.$col_bg;
+      justify-self: end;
+      padding: 1rem 3rem 1rem 3rem;
+
+      :nth-child(1),
+      :nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          height: 3rem;
+        }
+      }
+
+      :nth-child(1)::after {
+        content: "перейти";
+        font-size: .9rem;
+      }
+
+      :nth-child(2)::after {
+        content: "скрыть";
+        font-size: .9rem;
+      }
+    }
+  }
+}

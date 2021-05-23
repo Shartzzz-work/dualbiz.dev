@@ -7,6 +7,9 @@ class NavEvent {
           document.querySelector(".hamburger").classList.toggle("active");
           document.querySelector(".nav__menu").classList.toggle("active");
         }
+        if (event.target.classList.contains('settings_icon')) {
+          document.querySelector(".settings").classList.toggle("active");
+        }
         break;
       case 'mouseover':
         if (event.target.classList.contains('nav-link')) {

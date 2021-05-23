@@ -32,14 +32,18 @@
           <a href="company.html" class="nav-link-active">Компании</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Круг</a>
+          <a href="circle.html" class="nav-link">Круг</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Переводы</a>
+          <a href="transaction.html" class="nav-link">Переводы</a>
+        </li>
+        <li class="nav-item">
+          <a href="messagies.html" class="nav-link">Сообщения</a>
         </li>
       </ul>
       <div class="nav__user">
         <img src="../assets/img/ic-users-default.svg" alt="вход/выход" class="nav__user-img user_icon">
+
         <img src="../assets/img/Settings.svg" alt="настройки" class="nav__user-img settings_icon">
         <select name="language" class="nav__user-select">
           <option>Ru</option>
@@ -53,6 +57,34 @@
         </div>
       </div>
     </nav>
+
+    <div class="settings">
+      <div class="settings__block">
+        <h2>Баллов на вашем аккаунте: <span>200</span></h2>
+        <ol>
+          <li>1) Вы поддерживаете своей покупкой какую-нибудь компанию и она переводит вам баллы. Таким образом вы
+            можете
+            получать
+            баллы
+            просто так, перенеся часть своего спроса в круг выбранных вами компаний.</li>
+          <li>2) Если вы бизнесмен, то в начале использования сервиса, вы можете купить баллы. Быллы могут вечно
+            циркулировать в
+            вашем
+            кругу.</li>
+        </ol>
+        <a href="#" class="button">Получить баллы</a>
+        <select class="settings__block_select">
+          <option>Основной язык</option>
+          <option>Русский</option>
+          <option>England</option>
+        </select>
+        <select class="settings__block_select">
+          <option>Страна</option>
+          <option>Россия</option>
+          <option>USA</option>
+        </select>
+      </div>
+    </div>
   </header>
 
   <main id="company">
@@ -68,160 +100,100 @@
         <option>Россия</option>
         <option>USA</option>
       </datalist>
-
     </section>
 
     <section class="company">
-      <div class="company__card">
-        <img src="../assets/img/prstar6.jpg" alt="">
-        <div class="card_user">
-          <div class="card_avatar">
-            <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200"
-              xmlns="http://www.w3.org/2000/svg">
-
-              <circle class="circle-chart-background" stroke="#cccccc" stroke-width="2" stroke-dasharray="100"
-                fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-
-              <circle class="circle-chart-circle" stroke="#3cb65a" stroke-width="2" stroke-dasharray="20,100"
-                stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-              <g class="circle-chart-info">
-                <text class="circle-chart-percent" x="16.91549431" y="14" alignment-baseline="central"
-                  text-anchor="middle" font-size="8">20%</text>
-                <text class="circle-chart-subline" x="16.91549431" y="20.5" alignment-baseline="central"
-                  text-anchor="middle" font-size="4">возврат</text>
-                  <text class="circle-chart-subline" x="16.91549431" y="24" alignment-baseline="central" text-anchor="middle"
-                    font-size="4">баллов</text>
-              </g>
-            </svg>
-          </div>
-          <div class="card_contacts">
-            <div class="card_settings">
-              <img src="../assets/img/like.svg" alt="">
-
-              <img src="../assets/img/diz.svg" alt="">
+      <div class="card">
+        <div class="card__img">
+          <div class="glass">
+            <div>
+              <img src="../assets/img/like.png" alt="">
             </div>
-            <div class="card_name">
-              <h2><a href="lifepr.ru">prstar.ru</a></h2>
-              <p>Good price for good business</p>
+            <div>
+              <img src="../assets/img/dislike.png" alt="">
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="company__card">
-        <img src="../assets/img/prstar1.jpg" alt="">
-        <div class="card_user">
-          <div class="card_avatar">
-            <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200"
-              xmlns="http://www.w3.org/2000/svg">
+        <div class="progress__bar">
+          <span style="width: 20%">
+            <i>20%</i>
+          </span>
+          <p>Процент возврата баллов</p>
+        </div>
 
-              <circle class="circle-chart-background" stroke="#cccccc" stroke-width="2" stroke-dasharray="100"
-                fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-
-              <circle class="circle-chart-circle" stroke="#3cb65a" stroke-width="2" stroke-dasharray="20,100"
-                stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-              <g class="circle-chart-info">
-                <text class="circle-chart-percent" x="16.91549431" y="15.5" alignment-baseline="central"
-                  text-anchor="middle" font-size="8">20%</text>
-                <text class="circle-chart-subline" x="16.91549431" y="20.5" alignment-baseline="central"
-                  text-anchor="middle" font-size="4">возврат</text>
-              </g>
-            </svg>
-          </div>
-          <div class="card_contacts">
-            <div class="card_settings">
-              <img src="../assets/img/like.svg" alt="">
-              <img src="../assets/img/diz.svg" alt="">
-            </div>
-            <div class="card_name">
-              <h2><a href="lifepr.ru">prstar.ru</a></h2>
-              <p>Good price for good business</p>
-            </div>
-          </div>
+        <div class="card__block">
+          <a href="prstar.ru">Prstar.ru</a>
+          <p>Good price for good business</p>
+          <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d136625.3399751916!2d39.72409350429582!3d57.65238071633066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b291a051ecb939%3A0x59c9e61644948545!2z0K_RgNC-0YHQu9Cw0LLQu9GMLCDQr9GA0L7RgdC70LDQstGB0LrQsNGPINC-0LHQuy4!5e0!3m2!1sru!2sru!4v1621771860114!5m2!1sru!2sru"
+            allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
 
-      <div class="company__card">
-        <img src="../assets/img/prstar2.jpg" alt="">
-        <div class="card_user">
-          <div class="card_avatar">
-            <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200"
-              xmlns="http://www.w3.org/2000/svg">
-
-              <circle class="circle-chart-background" stroke="#cccccc" stroke-width="2" stroke-dasharray="100"
-                fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-
-              <circle class="circle-chart-circle" stroke="#3cb65a" stroke-width="2" stroke-dasharray="20,100"
-                stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-              <g class="circle-chart-info">
-                <text class="circle-chart-percent" x="16.91549431" y="15.5" alignment-baseline="central"
-                  text-anchor="middle" font-size="8">20%</text>
-                <text class="circle-chart-subline" x="16.91549431" y="20.5" alignment-baseline="central"
-                  text-anchor="middle" font-size="4">возврат</text>
-              </g>
-            </svg>
-          </div>
-          <div class="card_contacts">
-            <div class="card_settings">
-              <img src="../assets/img/like.svg" alt="">
-              <img src="../assets/img/diz.svg" alt="">
+      <div class="card">
+        <div class="card__img">
+          <div class="glass">
+            <div>
+              <img src="../assets/img/like.png" alt="">
             </div>
-            <div class="card_name">
-              <h2><a href="lifepr.ru">prstar.ru</a></h2>
-              <p>Good price for good business</p>
+            <div>
+              <img src="../assets/img/dislike.png" alt="">
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="company__card">
-        <img src="../assets/img/prstar4.jpg" alt="">
-        <div class="card_user">
-          <div class="card_avatar">
-            <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200"
-              xmlns="http://www.w3.org/2000/svg">
+        <div class="progress__bar">
+          <span style="width: 20%">
+            <i>20%</i>
+          </span>
+          <p>Процент возврата баллов</p>
+        </div>
 
-              <circle class="circle-chart-background" stroke="#cccccc" stroke-width="2" stroke-dasharray="100"
-                fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-
-              <circle class="circle-chart-circle" stroke="#3cb65a" stroke-width="2" stroke-dasharray="20,100"
-                stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-              <g class="circle-chart-info">
-                <text class="circle-chart-percent" x="16.91549431" y="15.5" alignment-baseline="central"
-                  text-anchor="middle" font-size="8">20%</text>
-                <text class="circle-chart-subline" x="16.91549431" y="20.5" alignment-baseline="central"
-                  text-anchor="middle" font-size="4">возврат</text>
-              </g>
-            </svg>
-          </div>
-          <div class="card_contacts">
-            <div class="card_settings">
-              <img src="../assets/img/like.svg" alt="">
-              <img src="../assets/img/diz.svg" alt="">
-            </div>
-            <div class="card_name">
-              <h2><a href="lifepr.ru">prstar.ru</a></h2>
-              <p>Good price for good business</p>
-            </div>
-          </div>
+        <div class="card__block">
+          <a href="prstar.ru">Prstar.ru</a>
+          <p>Good price for good business</p>
+          <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d136625.3399751916!2d39.72409350429582!3d57.65238071633066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b291a051ecb939%3A0x59c9e61644948545!2z0K_RgNC-0YHQu9Cw0LLQu9GMLCDQr9GA0L7RgdC70LDQstGB0LrQsNGPINC-0LHQuy4!5e0!3m2!1sru!2sru!4v1621771860114!5m2!1sru!2sru"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
 
+      <div class="card">
+        <div class="card__img">
+          <div class="glass">
+            <div>
+              <img src="../assets/img/like.png" alt="">
+            </div>
+            <div>
+              <img src="../assets/img/dislike.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="progress__bar">
+          <span style="width: 20%">
+            <i>20%</i>
+          </span>
+          <p>Процент возврата баллов</p>
+        </div>
+
+        <div class="card__block">
+          <a href="prstar.ru">Prstar.ru</a>
+          <p>Good price for good business</p>
+          <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d136625.3399751916!2d39.72409350429582!3d57.65238071633066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b291a051ecb939%3A0x59c9e61644948545!2z0K_RgNC-0YHQu9Cw0LLQu9GMLCDQr9GA0L7RgdC70LDQstGB0LrQsNGPINC-0LHQuy4!5e0!3m2!1sru!2sru!4v1621771860114!5m2!1sru!2sru"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
     </section>
 
   </main>
 
   <footer class="footer">
-    <!-- <h2>Установите наше приложение</h2>
-        <p>
-          Всеми функциями сервиса можно пользоваться как на сайте, так и с помощью приложения.
-        </p> -->
-    <div class="app__store">
-      <img src="../assets/img/app.svg" alt="">
-      <img src="../assets/img/ggl.svg" alt="">
-    </div>
+    <h2>Пока еще нет новых компаний</h2>
+    <a href="allrejected.html" class="button">Забракованные компании</a>
   </footer>
-
 
   <script type="module" src="../script.js"></script>
 </body>
