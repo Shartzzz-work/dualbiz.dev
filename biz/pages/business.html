@@ -38,6 +38,9 @@
         <li class="nav-item">
           <a href="transaction.html" class="nav-link">Переводы</a>
         </li>
+        <li class="nav-item">
+          <a href="messagies.html" class="nav-link">Сообщения</a>
+        </li>
       </ul>
       <div class="nav__user">
         <img src="../assets/img/ic-users-default.svg" alt="вход/выход" class="nav__user-img user_icon">
@@ -54,16 +57,42 @@
         </div>
       </div>
     </nav>
+
+    <div class="settings">
+      <div class="settings__block">
+        <h2>Баллов на вашем аккаунте: <span>200</span></h2>
+        <ol>
+          <li>1) Вы поддерживаете своей покупкой какую-нибудь компанию и она переводит вам баллы. Таким образом вы
+            можете
+            получать
+            баллы
+            просто так, перенеся часть своего спроса в круг выбранных вами компаний.</li>
+          <li>2) Если вы бизнесмен, то в начале использования сервиса, вы можете купить баллы. Быллы могут вечно
+            циркулировать в
+            вашем
+            кругу.</li>
+        </ol>
+        <a href="#" class="button">Получить баллы</a>
+        <select class="settings__block_select">
+          <option>Основной язык</option>
+          <option>Русский</option>
+          <option>England</option>
+        </select>
+        <select class="settings__block_select">
+          <option>Страна</option>
+          <option>Россия</option>
+          <option>USA</option>
+        </select>
+      </div>
+    </div>
   </header>
 
   <main id="business">
 
     <section class="business">
-      <div class="business__card">
-        <div class="business__card_img">
-          <img src="../assets/img/prstar1.jpg" class="cover-img" alt="">
-        </div>
-        <div class="business__card_user">
+      <div class="card">
+        <img src="../assets/img/prstar1.jpg" class="card-img" alt="">
+        <div class="card__block">
           <div>
             <h2>Prstar</h2>
             <p>Good price for good business</p>
@@ -73,10 +102,16 @@
             <a href="tel:+79998887766">+7 (999) 888-77-66</a>
           </div>
         </div>
-        <div class="business__card_user_settings">
-          <img src="../assets/img/home.svg" alt="">
-          <img src="../assets/img/rename.svg" alt="редактировать">
-          <img src="../assets/img/delete.svg" alt="удалить">
+        <div class="block_actions">
+          <div>
+            <img src="../assets/img/home.svg" alt="">
+          </div>
+          <div>
+            <img src="../assets/img/rename.svg" alt="редактировать">
+          </div>
+          <div>
+            <img src="../assets/img/delete.svg" alt="удалить">
+          </div>
         </div>
       </div>
       </div>

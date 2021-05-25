@@ -18,6 +18,7 @@
 </head>
 
 <body>
+
   <header id="header">
     <nav class="header__container">
       <a href="/index.html" class="nav__logo">Dualism</a>
@@ -32,10 +33,10 @@
           <a href="company.html" class="nav-link">Компании</a>
         </li>
         <li class="nav-item">
-          <a href="circle.html" class="nav-link">Круг</a>
+          <a href="circle.html" class="nav-link-active">Круг</a>
         </li>
         <li class="nav-item">
-          <a href="transaction.html" class="nav-link-active">Переводы</a>
+          <a href="transaction.html" class="nav-link">Переводы</a>
         </li>
         <li class="nav-item">
           <a href="messagies.html" class="nav-link">Сообщения</a>
@@ -86,50 +87,44 @@
     </div>
   </header>
 
-  <main id="transaction">
-    <section class="transaction">
+  <main id="circle">
+
+    <div class="circle__choice">
+      <a href="circle.html" class="button">Я выбрал</a>
+      <a href="choiceme.html" class="button">Меня выбрали</a>
+      <a href="chosetogether.html" class="button choice-active">Взаимный выбор</a>
+    </div>
+
+    <section class="circle">
       <div class="card">
+        <img src="../assets/img/prstar1.jpg" class="card-img" alt="">
         <div class="card__block">
           <div>
-            <i>LifePR</i>
-            <img src="../assets/img/lifepr3.jpg" alt="">
+            <h2>Prstar</h2>
+            <p>Good price for good business</p>
+            <p>Сайт:</p>
+            <a href='prstar.ru'>prstar.ru</a><br>
+            <p>Телефон:</p>
+            <a href="tel:+79998887766">+7 (999) 888-77-66</a>
           </div>
+
           <div>
-            <img src="../assets/img/money+.svg" alt="">
-          </div>
-          <div>
-            <i>Prstar</i>
-            <img src="../assets/img/lifepr1.jpg" alt="">
+            <a href="" class="button">Отправить баллы</a>
+            <a href="" class="button">Запросить баллы</a>
           </div>
         </div>
-        <div class="card__block_detale">
-          <p>сумма: <span>100</span></p>
-          <p>баллов: <span>20</span></p>
-          <p>2021-05-23 05:01</p>
+        <div class="block_actions">
+          <div>
+            <img src="../assets/img/mail.svg" alt="редактировать">
+          </div>
+          <div>
+            <img src="../assets/img/delete.svg" alt="удалить">
+          </div>
         </div>
       </div>
-
-      <div class="card">
-        <div class="card__block">
-          <div>
-            <i>LifePR</i>
-            <img src="../assets/img/lifepr3.jpg" alt="">
-          </div>
-          <div>
-            <img src="../assets/img/money-.svg" alt="">
-          </div>
-          <div>
-            <i>Prstar</i>
-            <img src="../assets/img/lifepr1.jpg" alt="">
-          </div>
-        </div>
-        <div class="card__block_detale">
-          <p>сумма: <span>100</span></p>
-          <p>баллов: <span>20</span></p>
-          <p>2021-05-23 05:01</p>
-        </div>
       </div>
     </section>
+
   </main>
 
   <script type="module" src="../script.js"></script>

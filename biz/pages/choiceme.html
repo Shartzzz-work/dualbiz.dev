@@ -18,6 +18,7 @@
 </head>
 
 <body>
+
   <header id="header">
     <nav class="header__container">
       <a href="/index.html" class="nav__logo">Dualism</a>
@@ -32,10 +33,10 @@
           <a href="company.html" class="nav-link">Компании</a>
         </li>
         <li class="nav-item">
-          <a href="circle.html" class="nav-link">Круг</a>
+          <a href="circle.html" class="nav-link-active">Круг</a>
         </li>
         <li class="nav-item">
-          <a href="transaction.html" class="nav-link-active">Переводы</a>
+          <a href="transaction.html" class="nav-link">Переводы</a>
         </li>
         <li class="nav-item">
           <a href="messagies.html" class="nav-link">Сообщения</a>
@@ -86,50 +87,20 @@
     </div>
   </header>
 
-  <main id="transaction">
-    <section class="transaction">
-      <div class="card">
-        <div class="card__block">
-          <div>
-            <i>LifePR</i>
-            <img src="../assets/img/lifepr3.jpg" alt="">
-          </div>
-          <div>
-            <img src="../assets/img/money+.svg" alt="">
-          </div>
-          <div>
-            <i>Prstar</i>
-            <img src="../assets/img/lifepr1.jpg" alt="">
-          </div>
-        </div>
-        <div class="card__block_detale">
-          <p>сумма: <span>100</span></p>
-          <p>баллов: <span>20</span></p>
-          <p>2021-05-23 05:01</p>
-        </div>
-      </div>
+  <main id="circle">
 
-      <div class="card">
-        <div class="card__block">
-          <div>
-            <i>LifePR</i>
-            <img src="../assets/img/lifepr3.jpg" alt="">
-          </div>
-          <div>
-            <img src="../assets/img/money-.svg" alt="">
-          </div>
-          <div>
-            <i>Prstar</i>
-            <img src="../assets/img/lifepr1.jpg" alt="">
-          </div>
-        </div>
-        <div class="card__block_detale">
-          <p>сумма: <span>100</span></p>
-          <p>баллов: <span>20</span></p>
-          <p>2021-05-23 05:01</p>
-        </div>
-      </div>
+    <div class="circle__choice">
+      <a href="circle.html" class="button">Я выбрал</a>
+      <a href="choiceme.html" class="button choice-active">Меня выбрали</a>
+      <a href="chosetogether.html" class="button">Взаимный выбор</a>
+    </div>
+
+    <section class="circle__choiceme">
+      <p>Тут будут компании, которые выберут вас. Они будут в этом списке, пока вы тоже не добавите их в свой круг!
+      </p>
+      <img src="../assets/img/chooseMe.png" alt="">
     </section>
+
   </main>
 
   <script type="module" src="../script.js"></script>
