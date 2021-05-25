@@ -187,7 +187,7 @@ header {
   background-color: #feefad;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
   .header__container {
     grid-template-columns: auto auto;
   }
@@ -223,6 +223,9 @@ header {
   .nav__menu.active .nav-item {
     margin: 0;
     padding: 2rem;
+  }
+  .nav__menu.active .nav-link-active {
+    color: #000;
   }
 
   .hamburger {
@@ -487,7 +490,7 @@ header {
   gap: 2rem;
 }
 .business .card {
-  height: 300px;
+  height: auto;
   width: 100%;
   box-shadow: -1rem 0 3rem #000;
   grid-template-columns: 40% 40% 20%;
@@ -519,6 +522,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .business .card .block_actions :nth-child(1) img,
 .business .card .block_actions :nth-child(2) img,
@@ -544,6 +548,23 @@ header {
   height: 300px;
 }
 
+@media screen and (max-width: 650px) {
+  .business .card {
+    grid-template-columns: auto;
+  }
+  .business .card .card__block {
+    border-right: 0;
+    border-bottom: #313745 solid 3px;
+  }
+  .business .card .block_actions {
+    flex-direction: row;
+    padding: 2rem 0;
+  }
+  .business .card-img {
+    border-radius: 1rem;
+    height: 100%;
+  }
+}
 .company__search {
   display: flex;
   justify-content: space-between;
@@ -587,15 +608,7 @@ header {
   margin: 0 auto;
 }
 .company .card__img {
-  position: relative;
-  background-image: url(assets/img/prstar4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 250px;
   border-radius: 1rem 1rem 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .company .glass {
   display: flex;
@@ -605,12 +618,14 @@ header {
   height: 70%;
   padding: 1rem;
   border-radius: 0.5rem;
+  margin-top: 1rem;
 }
 .company .glass :nth-child(1),
 .company .glass :nth-child(2) {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 .company .glass :nth-child(1)::after {
   content: "Добавить в мой круг";
@@ -692,6 +707,42 @@ header {
   padding: 3rem 0;
 }
 
+@media screen and (max-width: 1000px) {
+  .company {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 770px) {
+  .company__search .search_country {
+    height: 2rem;
+    font-size: 1rem;
+  }
+  .company__search .search_city {
+    height: 2rem;
+    font-size: 1rem;
+  }
+  .company__search .search_city::placeholder {
+    font-size: 1rem;
+    padding-left: 5px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .company {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .company__search {
+    flex-direction: column;
+  }
+  .company__search .search_city {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .company__search .search_country {
+    width: 50%;
+  }
+}
 .tasks {
   max-width: 1200px;
   margin: 0 auto;
@@ -728,6 +779,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .tasks .card .block_actions :nth-child(1) img,
 .tasks .card .block_actions :nth-child(2) img {
@@ -742,19 +794,72 @@ header {
   font-size: 0.9rem;
 }
 
+@media screen and (max-width: 760px) {
+  .tasks .card {
+    grid-template-columns: auto;
+    grid-template-rows: 50% 50%;
+    height: 400px;
+  }
+  .tasks .card .card__img {
+    grid-area: 1/1/2/3;
+    height: 100%;
+  }
+  .tasks .card .card__block {
+    padding: 0 2rem;
+    justify-content: space-evenly;
+  }
+  .tasks .card .block_actions {
+    padding: 0 2rem;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 550px) {
+  .tasks .card {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    height: auto;
+  }
+  .tasks .card .card__img {
+    grid-area: 1/1/1/1;
+    height: 100%;
+  }
+  .tasks .card .card__block {
+    padding-bottom: 2rem;
+  }
+  .tasks .card .card__block :nth-child(1) {
+    padding-bottom: 1rem;
+  }
+  .tasks .card .block_actions {
+    padding: 1rem;
+    flex-direction: row;
+    width: 100%;
+    border-top: solid 2px #313745;
+    border-left: 0;
+  }
+}
 .circle {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+.circle .button:active {
+  transform: translateY(4px);
+  border-bottom: none;
 }
 .circle .card {
   height: 300px;
   width: 100%;
   box-shadow: -1rem 0 3rem #000;
   grid-template-columns: 35% 50% 15%;
+}
+.circle .card .card__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 0 0 1rem;
 }
 .circle .card .card__block {
   flex-direction: column;
@@ -788,6 +893,10 @@ header {
   color: #252933;
   border-bottom: solid 4px #4d4960;
 }
+.circle .card .card__block :nth-child(2) .button:active {
+  transform: translateY(4px);
+  border-bottom: none;
+}
 .circle .card .card__block .button {
   color: #fff;
   text-decoration: none;
@@ -811,6 +920,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .circle .card .block_actions :nth-child(1) img,
 .circle .card .block_actions :nth-child(2) img,
@@ -825,15 +935,9 @@ header {
   content: "удалить из круга";
   font-size: 0.8rem;
 }
-.circle .card-img {
-  object-fit: cover;
-  border-radius: 1rem 0 0 1rem;
-  width: 100%;
-  height: 300px;
-}
 
 .circle__choice {
-  padding-top: 3rem;
+  padding: 3rem 1rem 0;
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
@@ -863,7 +967,7 @@ header {
 .circle__choiceme {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3rem 2rem;
   font-size: 2rem;
   color: #bac2cf;
   display: flex;
@@ -871,17 +975,72 @@ header {
   justify-content: center;
   align-items: center;
 }
+.circle__choiceme img {
+  width: 100%;
+  height: auto;
+}
 
+@media screen and (max-width: 930px) {
+  .circle .card {
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 50% 50%;
+    height: auto;
+  }
+  .circle .card .card__img {
+    grid-area: 1/1/2/3;
+    border-radius: 1rem;
+  }
+
+  .circle__choiceme {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .circle__choice {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .circle__choice :nth-child(1) {
+    grid-area: 1/1/2/3;
+  }
+
+  .circle .card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30%;
+    height: 100%;
+  }
+  .circle .card .card__img {
+    grid-area: 1/1/1/1;
+    border-radius: 1rem;
+  }
+  .circle .card .card__block {
+    border-right: 0;
+    border-bottom: #313745 solid 3px;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .circle .card .card__block :nth-child(2) a {
+    font-size: 0.9rem;
+  }
+  .circle .card .block_actions {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .circle__choiceme {
+    font-size: 1rem;
+  }
+}
 .transaction {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 .transaction .card {
-  height: 200px;
+  height: auto;
   width: 100%;
   box-shadow: -1rem 0 3rem #000;
   grid-template-columns: 80% 20%;
@@ -889,6 +1048,7 @@ header {
 .transaction .card__block {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
   align-items: center;
   padding: 2rem;
   border-right: #313745 solid 3px;
@@ -896,6 +1056,7 @@ header {
 .transaction .card__block :nth-child(1),
 .transaction .card__block :nth-child(3) {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -922,6 +1083,50 @@ header {
   font-size: 0.9rem;
 }
 
+@media screen and (max-width: 768px) {
+  .transaction .card {
+    grid-template-columns: 1fr;
+  }
+  .transaction .card .card__block {
+    border-bottom: #313745 solid 3px;
+    border-right: 0;
+  }
+  .transaction .card__block_detale {
+    flex-direction: row;
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 570px) {
+  .transaction .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .transaction .card .card__block {
+    grid-template-columns: 1fr;
+    row-gap: 0.5rem;
+    border-bottom: 0;
+    border-right: #313745 solid 3px;
+  }
+  .transaction .card__block_detale {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .transaction .card {
+    grid-template-columns: 1fr;
+  }
+  .transaction .card .card__block {
+    border-bottom: #313745 solid 3px;
+    border-right: 0;
+  }
+  .transaction .card__block_detale {
+    flex-direction: row;
+    padding: 2rem;
+    font-size: 0.9rem;
+    text-align: center;
+    gap: 0.5rem;
+  }
+}
 .messagies {
   max-width: 1200px;
   padding: 3rem 1.5rem;

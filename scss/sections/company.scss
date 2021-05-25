@@ -46,16 +46,7 @@
   margin: 0 auto;
 
   .card__img {
-    position: relative;
-    background-image: url(assets/img/prstar4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 250px;
     border-radius: 1rem 1rem 0 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .glass {
@@ -66,12 +57,14 @@
     height: 70%;
     padding: 1rem;
     border-radius: 0.5rem;
+    margin-top: 1rem;
 
     :nth-child(1),
     :nth-child(2) {
       display: flex;
       flex-direction: column;
       align-items: center;
+      cursor: pointer;
     }
 
     :nth-child(1)::after {
@@ -166,4 +159,46 @@
   align-items: center;
   justify-content: center;
   padding: 3rem 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .company {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .company__search {
+    .search_country {
+      height: 2rem;
+      font-size: 1rem;
+    }
+    .search_city {
+      height: 2rem;
+      font-size: 1rem;
+    }
+    .search_city::placeholder {
+      font-size: 1rem;
+      padding-left: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .company {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .company__search {
+    flex-direction: column;
+
+    .search_city {
+      margin-top: 1rem;
+      width: 100%;
+    }
+    .search_country {
+      width: 50%;
+    }
+  }
 }

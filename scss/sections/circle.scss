@@ -3,16 +3,28 @@
 .circle {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  .button:active {
+    transform: translateY(4px);
+    border-bottom: none;
+  }
 
   .card {
     height: 300px;
     width: 100%;
     box-shadow: -1rem 0 3rem #000;
     grid-template-columns: 35% 50% 15%;
+
+    .card__img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 1rem 0 0 1rem;
+    }
 
     .card__block {
       flex-direction: column;
@@ -49,6 +61,11 @@
           color: var.$col-dark;
           border-bottom: solid 4px var.$col-icon;
         }
+
+        .button:active {
+          transform: translateY(4px);
+          border-bottom: none;
+        }
       }
 
       .button {
@@ -76,6 +93,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
 
         img {
           height: 3rem;
@@ -93,17 +111,10 @@
       }
     }
   }
-
-  .card-img {
-    object-fit: cover;
-    border-radius: 1rem 0 0 1rem;
-    width: 100%;
-    height: 300px;
-  }
 }
 
 .circle__choice {
-  padding-top: 3rem;
+  padding: 3rem 1rem 0;
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
@@ -137,7 +148,7 @@
 .circle__choiceme {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3rem 2rem;
   font-size: 2rem;
   color: var.$col-text;
 
@@ -145,4 +156,73 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .circle {
+    .card {
+      grid-template-columns: 80% 20%;
+      grid-template-rows: 50% 50%;
+      height: auto;
+
+      .card__img {
+        grid-area: 1 / 1 / 2 / 3;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  .circle__choiceme {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .circle__choice {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    :nth-child(1) {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+  }
+
+  .circle {
+    .card {
+      grid-template-columns: 1fr;
+      grid-template-rows: 30%;
+      height: 100%;
+
+      .card__img {
+        grid-area: 1 / 1 / 1 / 1;
+        border-radius: 1rem;
+      }
+
+      .card__block {
+        border-right: 0;
+        border-bottom: var.$col_bg solid 3px;
+        width: 100%;
+        font-size: 0.9rem;
+        :nth-child(2) {
+          a {
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      .block_actions {
+        flex-direction: row;
+        width: 100%;
+      }
+    }
+  }
+
+  .circle__choiceme {
+    font-size: 1rem;
+  }
 }

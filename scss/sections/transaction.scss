@@ -3,13 +3,13 @@
 .transaction {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 
   .card {
-    height: 200px;
+    height: auto;
     width: 100%;
     box-shadow: -1rem 0 3rem #000;
     grid-template-columns: 80% 20%;
@@ -18,6 +18,7 @@
   .card__block {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
     align-items: center;
     padding: 2rem;
     border-right: var.$col_bg solid 3px;
@@ -25,6 +26,7 @@
     :nth-child(1),
     :nth-child(3) {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
     }
@@ -57,7 +59,65 @@
     }
 
     :nth-child(3) {
-      font-size: .9rem;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .transaction {
+    .card {
+      grid-template-columns: 1fr;
+
+      .card__block {
+        border-bottom: var.$col_bg solid 3px;
+        border-right: 0;
+      }
+    }
+
+    .card__block_detale {
+      flex-direction: row;
+      padding: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .transaction {
+    .card {
+      grid-template-columns: repeat(2, 1fr);
+
+      .card__block {
+        grid-template-columns: 1fr;
+        row-gap: 0.5rem;
+        border-bottom: 0;
+        border-right: var.$col_bg solid 3px;
+      }
+    }
+    .card__block_detale {
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .transaction {
+    .card {
+      grid-template-columns: 1fr;
+
+      .card__block {
+        border-bottom: var.$col_bg solid 3px;
+        border-right: 0;
+      }
+    }
+
+    .card__block_detale {
+      flex-direction: row;
+      padding: 2rem;
+      font-size: 0.9rem;
+      text-align: center;
+      gap: 0.5rem;
     }
   }
 }
