@@ -7,7 +7,7 @@
 
   .card {
     grid-template-columns: 25% 50% 25%;
-    height: 200px;
+    // height: 200px;
     width: 100%;
     margin-top: 2rem;
 
@@ -26,19 +26,16 @@
     }
 
     .block_actions {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
+      display: grid;
+      place-self: end;
       border-left: solid 2px var.$col_bg;
-      justify-self: end;
-      padding: 1rem 3rem 1rem 3rem;
+      // padding: 1rem 3rem 1rem 3rem;
+      padding: 1rem 2rem;
+      font-size: 0.9rem;
 
       :nth-child(1),
       :nth-child(2) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: grid;
         cursor: pointer;
 
         img {
@@ -48,12 +45,10 @@
 
       :nth-child(1)::after {
         content: "перейти";
-        font-size: 0.9rem;
       }
 
       :nth-child(2)::after {
         content: "скрыть";
-        font-size: 0.9rem;
       }
     }
   }
@@ -62,9 +57,9 @@
 @media screen and (max-width: 760px) {
   .tasks {
     .card {
-      grid-template-columns: auto;
+      grid-template-columns: 80% 20%;
       grid-template-rows: 50% 50%;
-      height: 400px;
+      // height: 400px;
 
       .card__img {
         grid-area: 1 / 1 / 2 / 3;
@@ -77,8 +72,9 @@
       }
 
       .block_actions {
+        place-self: center;
+        height: 100%;
         padding: 0 2rem;
-        justify-content: space-evenly;
       }
     }
   }
@@ -87,9 +83,9 @@
 @media screen and (max-width: 550px) {
   .tasks {
     .card {
-      grid-template-columns: auto;
-      grid-template-rows: auto;
-      height: auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: 30% 50% 20%;
+      height: 520px;
 
       .card__img {
         grid-area: 1 / 1 / 1 / 1;
@@ -97,7 +93,7 @@
       }
 
       .card__block {
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
 
         :nth-child(1) {
           padding-bottom: 1rem;
@@ -105,8 +101,9 @@
       }
 
       .block_actions {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
         padding: 1rem;
-        flex-direction: row;
         width: 100%;
         border-top: solid 2px var.$col_bg;
         border-left: 0;

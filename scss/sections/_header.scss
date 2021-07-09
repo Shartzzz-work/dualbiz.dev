@@ -58,8 +58,8 @@ header {
   justify-items: center;
 
   a {
-      width: 100%;
-      height: 100%;
+    width: 100%;
+    height: 100%;
   }
 
   .nav__user-img {
@@ -75,6 +75,41 @@ header {
     border: var.$col-logo solid 2px;
     height: 20px;
     margin-left: 0.5rem;
+  }
+
+  .nav__user_points, .nav__user_company {
+    display: flex;
+    align-items: center;
+    color: var.$col-text;
+    height: 100%;
+    width: auto;
+    margin-left: 1rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    span {
+      margin-right: 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    .point_icon {
+      height: 1.5rem;
+    }
+
+    select {
+      height: 95%;
+      min-width: 100px;
+      outline: none;
+      border-radius: 3px;
+
+      .nav__user_company-logOut {
+        font-size: 1.2rem;
+        color: var.$col-logo;
+        background: var.$col-dark;
+      }
+    }
   }
 }
 
@@ -110,7 +145,7 @@ header {
   background-color: var.$col-logo;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1030px) {
   .header__container {
     grid-template-columns: auto auto;
   }
@@ -183,19 +218,19 @@ header {
   display: none;
   z-index: 2;
 }
-.settings.active {
+.settings-active {
   display: block;
 }
 
 .settings__block {
   position: absolute;
   max-width: 500px;
-  background: rgba(255, 255, 255, 0.863);
+  background: rgb(255, 255, 255);
   box-shadow: -1rem 0 3rem #000;
   right: 0;
   top: 0;
   padding: 1.5rem;
-  border-radius: 0 0 .5rem .5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
 
   h2 {
     padding-bottom: 1rem;
@@ -219,4 +254,38 @@ header {
   width: 100%;
   height: 2rem;
   margin-bottom: 1rem;
+}
+
+.modal__point {
+  width: 600px;
+  ul, li {
+    list-style-type: decimal;
+    padding: 1rem 2rem;
+  }
+
+  form {
+    padding: 0;
+
+    h3 {
+      padding: 1rem 1rem 0 1rem;
+    }
+  }
+
+  .modal-buttons {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: end;
+    border-top: solid 1px;
+    padding: 3rem 1rem 1rem 1rem;
+
+    .button {
+      margin-top: 0;
+    }
+
+    input[type="text"] {
+      height: 50px;
+      padding-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
 }

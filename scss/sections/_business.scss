@@ -6,17 +6,15 @@
   padding: 3rem 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 
   .card {
-    height: auto;
-    width: 100%;
     box-shadow: -1rem 0 3rem #000;
     grid-template-columns: 40% 40% 20%;
+    height: 300px;
+    margin-bottom: 2rem;
 
     .card__block {
-      flex-direction: column;
-      justify-content: center;
+      display: block;
       padding: 2rem;
       border-right: var.$col_bg solid 3px;
 
@@ -33,38 +31,39 @@
     }
 
     .block_actions {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
+      height: 100%;
+      display: grid;
 
       :nth-child(1),
       :nth-child(2),
       :nth-child(3) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        place-self: center;
         cursor: pointer;
 
-        img {
-          height: 3rem;
+        img, svg {
+          height: 2.5rem;
+        }
+
+        span {
+          font-size: 0.8rem;
         }
       }
 
-      :nth-child(1)::after {
-        content: "сделать главной";
-        font-size: 0.8rem;
-      }
+      // :nth-child(1)::after {
+      //   content: "сделать главной";
+      //   font-size: 0.8rem;
+      // }
 
-      :nth-child(2)::after {
-        content: "редактировать";
-        font-size: 0.8rem;
-      }
+      // :nth-child(2)::after {
+      //   content: "редактировать";
+      //   font-size: 0.8rem;
+      // }
 
-      :nth-child(3)::after {
-        content: "удалить";
-        font-size: 0.8rem;
-      }
+      // :nth-child(3)::after {
+      //   content: "удалить";
+      //   font-size: 0.8rem;
+      // }
     }
   }
 
@@ -72,7 +71,18 @@
     object-fit: cover;
     border-radius: 1rem 0 0 1rem;
     width: 100%;
-    height: 300px;
+    height: 100%;
+  }
+}
+
+.business__add {
+  place-items: center;
+  background: #313a48;
+  border: dotted 5px var.$col-text;
+
+  h2 {
+    grid-area: 1 / 1 / 2 / 4;
+    color: var.$col-text;
   }
 }
 
@@ -80,6 +90,8 @@
   .business {
     .card {
       grid-template-columns: auto;
+      height: 100%;
+      // height: 770px;
 
       .card__block {
         border-right: 0;
@@ -87,8 +99,9 @@
       }
 
       .block_actions {
-        flex-direction: row;
+        grid-template-columns: 1fr 1fr 1fr;
         padding: 2rem 0;
+        text-align: center;
       }
     }
 
@@ -97,4 +110,12 @@
       height: 100%;
     }
   }
+}
+
+.svg-home-2 {
+  fill: #bac2cf;
+}
+
+.svg-home-2-acive {
+  fill: #feefad;
 }

@@ -2,6 +2,7 @@
 
 @use 'scss/components/card.scss';
 @use 'scss/components/components.scss';
+@use 'scss/components/modal.scss';
 @use 'scss/reset';
 @use 'scss/sections/header';
 @use 'scss/sections/about';
@@ -15,13 +16,13 @@
 @use 'scss/sections/circle';
 @use 'scss/sections/transaction';
 @use 'scss/sections/messagies';
+@use 'scss/sections/willPost';
 
 body {
   background: var.$col_bg;
+  position: relative;
 }
 
 main {
   height: 100%;
 }
-
-

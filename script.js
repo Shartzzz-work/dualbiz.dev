@@ -11,10 +11,16 @@ class NavEvent {
         }
 
         if (event.target.classList.contains('settings_icon')) {
-          document.querySelector(".settings").classList.toggle("active");
+          document.querySelector(".settings").classList.toggle("settings-active");
+        }
+        if (event.target.classList.contains('open-modal')) {
+          modal.style = "display: flex";
+        }
+        if (event.target.classList.contains('modal-close') || event.target.id === "modal") {
+          modal.style = "";
         }
 
-        if (event.target.classList.contains('message__settings')) {
+        if (event.target.classList.contains('message__settings_img')) {
           bool = !bool;
           console.log(bool);
           if (bool == true) {
@@ -33,6 +39,18 @@ class NavEvent {
                   <img src="../assets/img/prstar4.jpg">
                   <h3 class="glass">Prstar</h3>
                 </div>
+                <div class="message__settings_item">
+                  <img src="../assets/img/prstar4.jpg">
+                  <h3 class="glass">Prstar</h3>
+                </div>
+                <div class="message__settings_item">
+                  <img src="../assets/img/prstar4.jpg">
+                  <h3 class="glass">Prstar</h3>
+                </div>
+                <div class="message__settings_item">
+                  <img src="../assets/img/prstar4.jpg">
+                  <h3 class="glass">Prstar</h3>
+                </div>
               </div>
             `
             );
@@ -40,6 +58,11 @@ class NavEvent {
             document.querySelector(".message__settings-active").remove();
           }
         }
+
+        if (event.target.classList.contains('tag__close') || event.target.classList.contains('tag__close_img')) {
+          console.log(event.target);
+          event.target.parentElement.parentElement.remove();
+        };
         break;
     }
   }
@@ -47,3 +70,15 @@ class NavEvent {
 
 let navEvent = new NavEvent;
 document.addEventListener('click', navEvent);
+
+if (document.querySelector('.fileInput')) {
+  document.querySelector('.fileInput').addEventListener('dragenter', () => {
+    document.querySelector('.fileInput__zone').classList.add('active');
+  });
+
+  document.querySelector('.fileInput').addEventListener('dragleave', () => {
+    document.querySelector('.fileInput__zone').classList.remove('active');
+  });
+}
+
+

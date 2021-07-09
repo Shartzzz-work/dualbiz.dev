@@ -42,13 +42,28 @@
         </li>
       </ul>
       <div class="nav__user">
-        <img src="../assets/img/ic-users-default.svg" alt="вход/выход" class="nav__user-img user_icon">
 
-        <img src="../assets/img/Settings.svg" alt="настройки" class="nav__user-img settings_icon">
-        <select name="language" class="nav__user-select">
-          <option>Ru</option>
-          <option>En</option>
-        </select>
+
+        <div class="nav__user_points">
+          <span class="open-modal">200</span> <img src="../assets/img/dislike.png" alt="баллов"
+            class="point_icon open-modal">
+          <img src="../assets/img/Settings.svg" alt="настройки" class="nav__user-img settings_icon">
+        </div>
+
+        <div class="nav__user_company">
+          <select>
+            <option>PrStar</option>
+            <option>PrStar</option>
+            <option>PrStar</option>
+            <option>PrStar</option>
+            <option>PrStar</option>
+            <option>PrStar</option>
+            <option>PrStar</option>
+            <option>PrStar</option>
+            <option class="nav__user_company-logOut">Выйти</option>
+          </select>
+          <img src="../assets/img/ic-users-default.svg" alt="вход/выход" class="nav__user-img user_icon">
+        </div>
 
         <div class="hamburger">
           <span class="bar"></span>
@@ -72,7 +87,7 @@
             вашем
             кругу.</li>
         </ol>
-        <a href="#" class="button">Получить баллы</a>
+        <a href="#modal" class="button open-modal">Получить баллы</a>
         <select class="settings__block_select">
           <option>Основной язык</option>
           <option>Русский</option>
@@ -85,6 +100,33 @@
         </select>
       </div>
     </div>
+
+    <div id="modal">
+      <div class="modal modal__point">
+        <div class="modal-header">
+          <h2>Как получить баллы?</h2>
+          <div class="modal-close">
+            <img src="../assets/img/close.svg" alt="закрыть" class="modal-close">
+            <span>закрыть</span>
+          </div>
+        </div>
+        <form>
+          <h3>Вы можете получить баллы двумя способами:</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque animi officiis ipsam labore veritatis
+              aspernatur pariatur dolorem? Aliquid similique eveniet dolores ullam perferendis soluta officiis labore
+              molestiae, deleniti, totam aut?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt porro corporis enim cum eum
+              accusantium iste odio laudantium repellat, minima consequuntur culpa quae distinctio reprehenderit dolor
+              perferendis voluptatibus a illo.</li>
+          </ul>
+          <div class="modal-buttons">
+            <input type="text" placeholder="Введите баллы">
+            <input type="submit" value="Оплатить" class="button">
+          </div>
+        </form>
+      </div>
+    </div>
   </header>
 
   <main id="company">
@@ -95,12 +137,55 @@
         <option>USA</option>
       </select>
 
-      <input type="text" name="input" placeholder="Выберите города поблизости" class="search_city" list="city">
-      <datalist id="city">
+      <div class="search__city">
+        <div class="search__city_block">
+          <i class="search__city_placeholder">Выберите город</i>
+        </div>
+        <select class="search__city_select">
+          <option>Москва</option>
+          <option>London</option>
+          <option>Длинный город</option>
+        </select>
+      </div>
+    </section>
+    <section class="company__search">
+      <select class="search_country">
         <option>Россия</option>
         <option>USA</option>
-      </datalist>
+      </select>
+
+      <div class="search__city">
+        <div class="search__city_block">
+          <span class="tag">Санкт-Петербург <a href="#" class="tag__close"><img src="../assets/img/close-tag.svg"
+                alt="закрыть тег" class="tag__close_img"></a></span>
+          <span class="tag">Санкт-Петербург <a href="#" class="tag__close"><img src="../assets/img/close-tag.svg"
+                alt="закрыть тег" class="tag__close_img"></a></span>
+          <span class="tag">Санкт-Петербург <a href="#" class="tag__close"><img src="../assets/img/close-tag.svg"
+                alt="закрыть тег" class="tag__close_img"></a></span>
+          <span class="tag">Санкт-Петербург <a href="#" class="tag__close"><img src="../assets/img/close-tag.svg"
+                alt="закрыть тег" class="tag__close_img"></a></span>
+          <span class="tag">Санкт-Петербург <a href="#" class="tag__close"><img src="../assets/img/close-tag.svg"
+                alt="закрыть тег" class="tag__close_img"></a></span>
+          <span class="tag">Санкт-Петербург <a href="#" class="tag__close"><img src="../assets/img/close-tag.svg"
+                alt="закрыть тег" class="tag__close_img"></a></span>
+          <span class="tag">Санкт-Петербург <a href="#" class="tag__close"><img src="../assets/img/close-tag.svg"
+                alt="закрыть тег" class="tag__close_img"></a></span>
+          <span class="tag">Санкт-Петербург <a href="#" class="tag__close"><img src="../assets/img/close-tag.svg"
+                alt="закрыть тег" class="tag__close_img"></a></span>
+        </div>
+        <select class="search__city_select">
+          <option>Москва</option>
+          <option>London</option>
+          <option>Длинный город</option>
+        </select>
+      </div>
     </section>
+
+
+    <div class="company__search-searh">
+      <input type="text" placeholder="Поиск по компаниям">
+      <img src="../assets/img/search.svg" alt="">
+    </div>
 
     <section class="company">
       <div class="card">
@@ -116,12 +201,14 @@
           <a href="prstar.ru">Prstar.ru</a>
           <p>Good price for good business</p>
           <div class="glass">
-            <div>
+            <a href="#">
               <img src="../assets/img/like.png" alt="">
-            </div>
-            <div>
+              <span>добавить в мой круг</span>
+            </a>
+            <a href="#">
               <img src="../assets/img/dislike.png" alt="">
-            </div>
+              <span>удалить из круга</span>
+            </a>
           </div>
         </div>
       </div>
@@ -140,12 +227,14 @@
           <a href="prstar.ru">Prstar.ru</a>
           <p>Good price for good business</p>
           <div class="glass">
-            <div>
+            <a href="#">
               <img src="../assets/img/like.png" alt="">
-            </div>
-            <div>
+              <span>добавить в мой круг</span>
+            </a>
+            <a href="#">
               <img src="../assets/img/dislike.png" alt="">
-            </div>
+              <span>удалить из круга</span>
+            </a>
           </div>
         </div>
       </div>
@@ -164,12 +253,14 @@
           <a href="prstar.ru">Prstar.ru</a>
           <p>Good price for good business</p>
           <div class="glass">
-            <div>
+            <a href="#">
               <img src="../assets/img/like.png" alt="">
-            </div>
-            <div>
+              <span>добавить в мой круг</span>
+            </a>
+            <a href="#">
               <img src="../assets/img/dislike.png" alt="">
-            </div>
+              <span>удалить из круга</span>
+            </a>
           </div>
         </div>
       </div>
@@ -182,7 +273,7 @@
     <a href="allrejected.html" class="button">Забракованные компании</a>
   </footer>
 
-  <script type="module" src="../script.js"></script>
+  <script src="../script.js"></script>
 </body>
 
 </html>

@@ -104,22 +104,47 @@
         </div>
         <div class="block_actions">
           <div>
-            <img src="../assets/img/home.svg" alt="">
+            <img src="../assets/img/home.svg" alt="сделать главной">
+            <span>сделать главной</span>
           </div>
           <div>
             <img src="../assets/img/rename.svg" alt="редактировать">
+            <span>редактировать</span>
           </div>
           <div>
-            <img src="../assets/img/delete.svg" alt="удалить">
+            <img src="../assets/img/delete.svg" alt="удалить" class="open-modal">
+            <span>удалить</span>
           </div>
         </div>
       </div>
-      </div>
+
+      <a href="./willPost.html" class="card business__add">
+        <h2>Добавить компанию</h2>
+      </a>
+
     </section>
+
+    <div id="modal">
+      <div class="modal">
+        <div class="modal-header">
+          <h2>Удалить этот бизнес?</h2>
+          <div class="modal-close">
+            <img src="../assets/img/close.svg" alt="закрыть" class="modal-close">
+            <span>закрыть</span>
+          </div>
+        </div>
+        <form>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque sequi deserunt quaerat, eum placeat dicta
+          perferendis facilis reiciendis incidunt, pariatur, laboriosam error doloribus quos. Suscipit, animi fugit?
+          Fuga, similique rerum?
+          <input type="submit" value="Удалить" class="button">
+        </form>
+      </div>
+    </div>
 
   </main>
 
-  <script type="module" src="../script.js"></script>
+  <script src="../script.js"></script>
 </body>
 
 </html>

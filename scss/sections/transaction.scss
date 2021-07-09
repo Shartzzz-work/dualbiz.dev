@@ -6,13 +6,13 @@
   padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 
   .card {
     height: auto;
     width: 100%;
     box-shadow: -1rem 0 3rem #000;
     grid-template-columns: 80% 20%;
+    margin-bottom: 2rem;
   }
 
   .card__block {

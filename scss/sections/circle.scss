@@ -6,7 +6,6 @@
   padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 
   .button:active {
     transform: translateY(4px);
@@ -18,6 +17,7 @@
     width: 100%;
     box-shadow: -1rem 0 3rem #000;
     grid-template-columns: 35% 50% 15%;
+    margin-bottom: 2rem;
 
     .card__img {
       height: 100%;
@@ -27,13 +27,17 @@
     }
 
     .card__block {
-      flex-direction: column;
-      justify-content: space-evenly;
+      display: block;
       padding: 0 2rem;
       border-right: var.$col_bg solid 3px;
 
       h2 {
         text-align: center;
+        // padding-top: 1rem;
+      }
+
+      .card__block-text {
+        padding: 1rem 0 2rem;
       }
 
       a {
@@ -80,11 +84,14 @@
     }
 
     .block_actions {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-evenly;
+      display: grid;
+
       padding: 1rem;
       text-align: center;
+      font-size: 0.8rem;
 
       :nth-child(1),
       :nth-child(2),
@@ -102,12 +109,10 @@
 
       :nth-child(1)::after {
         content: "отправить сообщение";
-        font-size: 0.8rem;
       }
 
       :nth-child(2)::after {
         content: "удалить из круга";
-        font-size: 0.8rem;
       }
     }
   }
@@ -118,17 +123,21 @@
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
-  gap: 1rem;
 
   .button {
     background: #46567a;
     border-bottom: solid 4px #627295;
+    margin: 0 1rem;
   }
 
   .button:active {
     transform: translateY(4px);
     border-bottom: none;
   }
+
+  // :nth-child(2) {
+  //   margin: 1rem;
+  // }
 
   .choice-active {
     background: var.$col-logo;
@@ -168,7 +177,7 @@
     .card {
       grid-template-columns: 80% 20%;
       grid-template-rows: 50% 50%;
-      height: auto;
+      height: 550px;
 
       .card__img {
         grid-area: 1 / 1 / 2 / 3;
@@ -185,18 +194,29 @@
 @media screen and (max-width: 600px) {
   .circle__choice {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
 
     :nth-child(1) {
       grid-area: 1 / 1 / 2 / 3;
     }
+
+    :nth-child(1),
+    :nth-child(1) {
+      margin: 0 1rem;
+    }
+
+    .button {
+      width: 100%;
+      margin: 0 0 1rem 0;
+    }
   }
 
   .circle {
+    padding-top: 1rem;
     .card {
       grid-template-columns: 1fr;
-      grid-template-rows: 30%;
-      height: 100%;
+      grid-template-rows: 30% 50% 20%;
+      height: 550px;
 
       .card__img {
         grid-area: 1 / 1 / 1 / 1;
@@ -205,24 +225,62 @@
 
       .card__block {
         border-right: 0;
-        border-bottom: var.$col_bg solid 3px;
+        // border-bottom: var.$col_bg solid 3px;
         width: 100%;
         font-size: 0.9rem;
-        :nth-child(2) {
-          a {
-            font-size: 0.9rem;
-          }
+        padding-bottom: 1rem;
+        height: 15rem;
+
+        .button {
+          font-size: 0.8rem;
+        }
+
+        .card__block-text {
+          padding: 1rem 0 1rem;
         }
       }
 
       .block_actions {
-        flex-direction: row;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
         width: 100%;
+        border-top: var.$col_bg solid 3px;
+
+        img {
+          width: 30%;
+        }
+
+        :nth-child(1),
+        :nth-child(2) {
+          width: 50%;
+        }
       }
     }
   }
 
   .circle__choiceme {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .circle {
+    .card {
+      height: 500px;
+      .card__block {
+        font-size: 0.8rem;
+        a {
+          font-size: 0.9rem;
+        }
+
+        .button {
+          font-size: 0.7rem;
+        }
+      }
+
+      .block_actions {
+        font-size: 0.6rem;
+      }
+    }
   }
 }

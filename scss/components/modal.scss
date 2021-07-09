@@ -1,0 +1,57 @@
+@use '../var';
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.555);
+  padding: 1.5rem;
+  z-index: 9;
+  display: none;
+}
+
+.modal-wrapper-active {
+  display: flex;
+}
+
+.modal {
+  background: var.$col-text;
+  border-radius: 1rem;
+  height: auto;
+  margin: auto;
+  width: 500px;
+
+  form {
+    padding: 1rem;
+  }
+
+  .button {
+    margin-top: 4rem;
+    height: 50px;
+    cursor: pointer;
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: var.$col_bg solid 1px;
+}
+
+.modal-close {
+  cursor: pointer;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  font-size: 0.7rem;
+}
+
+@media screen and (max-width: 650px) {
+  .modal {
+    width: 95%;
+    font-size: .8rem;
+  }
+}
