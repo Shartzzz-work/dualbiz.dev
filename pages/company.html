@@ -45,8 +45,8 @@
 
 
         <div class="nav__user_points">
-          <span class="open-modal">200</span> <img src="../assets/img/dislike.png" alt="баллов"
-            class="point_icon open-modal">
+          <span class="open-modal" data-modal="modal__get_points">200</span> <img src="../assets/img/dislike.png" alt="баллов"
+            class="point_icon">
           <img src="../assets/img/Settings.svg" alt="настройки" class="nav__user-img settings_icon">
         </div>
 
@@ -87,7 +87,7 @@
             вашем
             кругу.</li>
         </ol>
-        <a href="#modal" class="button open-modal">Получить баллы</a>
+        <a href="#modal" class="button open-modal" data-modal="modal__get_points">Получить баллы</a>
         <select class="settings__block_select">
           <option>Основной язык</option>
           <option>Русский</option>
@@ -101,12 +101,12 @@
       </div>
     </div>
 
-    <div id="modal">
-      <div class="modal modal__point">
-        <div class="modal-header">
+    <div id="modal__get_points" class="modal__wrapper">
+      <div class="modal modal__point" onclick="event.stopPropagation()">
+        <div class="modal__header">
           <h2>Как получить баллы?</h2>
-          <div class="modal-close">
-            <img src="../assets/img/close.svg" alt="закрыть" class="modal-close">
+          <div class="modal__close">
+            <img src="../assets/img/close.svg" alt="закрыть" class="modal__close">
             <span>закрыть</span>
           </div>
         </div>
@@ -120,9 +120,9 @@
               accusantium iste odio laudantium repellat, minima consequuntur culpa quae distinctio reprehenderit dolor
               perferendis voluptatibus a illo.</li>
           </ul>
-          <div class="modal-buttons">
-            <input type="text" placeholder="Введите баллы">
-            <input type="submit" value="Оплатить" class="button">
+          <div class="modal__buttons">
+            <input type="text" placeholder="Введите баллы" class="modal__input">
+            <input type="submit" value="Оплатить" class="button modal__input">
           </div>
         </form>
       </div>
@@ -154,7 +154,7 @@
         <option>USA</option>
       </select>
 
-      <div class="search__city">
+      <div class="search__city search__city-active">
         <div class="search__city_block">
           <span class="tag">Санкт-Петербург <a href="#" class="tag__close"><img src="../assets/img/close-tag.svg"
                 alt="закрыть тег" class="tag__close_img"></a></span>
@@ -170,10 +170,8 @@
                 alt="закрыть тег" class="tag__close_img"></a></span>
           <span class="tag">Санкт-Петербург <a href="#" class="tag__close"><img src="../assets/img/close-tag.svg"
                 alt="закрыть тег" class="tag__close_img"></a></span>
-          <span class="tag">Санкт-Петербург <a href="#" class="tag__close"><img src="../assets/img/close-tag.svg"
-                alt="закрыть тег" class="tag__close_img"></a></span>
         </div>
-        <select class="search__city_select">
+        <select class="search__city_select search__city-active">
           <option>Москва</option>
           <option>London</option>
           <option>Длинный город</option>

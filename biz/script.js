@@ -13,12 +13,12 @@ class NavEvent {
         if (event.target.classList.contains('settings_icon')) {
           document.querySelector(".settings").classList.toggle("settings-active");
         }
-        if (event.target.classList.contains('open-modal')) {
-          modal.style = "display: flex";
-        }
-        if (event.target.classList.contains('modal-close') || event.target.id === "modal") {
-          modal.style = "";
-        }
+        // if (event.target.classList.contains('open-modal')) {
+        //   modal.style = "display: flex";
+        // }
+        // if (event.target.classList.contains('modal-close') || event.target.id === "modal") {
+        //   modal.style = "";
+        // }
 
         if (event.target.classList.contains('message__settings_img')) {
           bool = !bool;
@@ -81,4 +81,14 @@ if (document.querySelector('.fileInput')) {
   });
 }
 
+document.querySelectorAll('.open-modal').forEach(i => i.addEventListener('click', () => {
+  const modalId = i.dataset.modal
+
+  document.getElementById(modalId).style.display = "flex";
+
+  document.querySelectorAll('.modal__close').forEach(i => i.addEventListener('click', () => document.getElementById(modalId).style.display = ""));
+
+  document.querySelectorAll('.modal__wrapper').forEach(i => i.addEventListener('click', () => document.getElementById(modalId).style.display = ""));
+})
+)
 

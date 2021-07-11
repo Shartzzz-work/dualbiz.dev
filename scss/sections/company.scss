@@ -30,6 +30,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 3rem;
+  }
+
+  .search__city-active {
+    height: 6rem;
   }
 
   .search__city_placeholder {
@@ -39,6 +44,7 @@
 
   .search__city_select {
     position: absolute;
+    top: 0;
     right: 0;
     height: 100%;
     border-radius: 5px;
@@ -276,3 +282,4 @@
     }
   }
 }
+

@@ -151,23 +151,23 @@
           obcaecati reiciendis? Non magni, consectetur quos sit aut itaque accusamus impedit maxime necessitatibus
           consequuntur.</p>
       </div>
-      <a href="#modal" class="button open-modal">Добавить адрес</a>
+      <a href="#modal" class="button open-modal" data-modal="modal__add_adres">Добавить адрес</a>
     </section>
 
-    <div id="modal">
-      <div class="modal">
-        <div class="modal-header">
+    <div id="modal__add_adres" class="modal__wrapper">
+      <div class="modal" onclick="event.stopPropagation()">
+        <div class="modal__header">
           <h2>Добавить адрес</h2>
-          <div class="modal-close">
-            <img src="../assets/img/close.svg" alt="закрыть" class="modal-close">
+          <div class="modal__close">
+            <img src="../assets/img/close.svg" alt="закрыть">
             <span>закрыть</span>
           </div>
         </div>
-        <form>
-          <label>Город</label>
-          <input type="text">
-          <label>Адрес</label>
-          <input type="text">
+        <form class="modal__form">
+          <label class="modal__label">Город</label>
+          <input type="text" class="modal__input">
+          <label class="modal__label">Адрес</label>
+          <input type="text" class="modal__input">
           <input type="submit" value="Добавить" class="button">
         </form>
       </div>

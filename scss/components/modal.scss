@@ -1,6 +1,6 @@
 @use '../var';
 
-#modal {
+.modal__wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -12,46 +12,59 @@
   display: none;
 }
 
-.modal-wrapper-active {
-  display: flex;
-}
-
 .modal {
   background: var.$col-text;
   border-radius: 1rem;
   height: auto;
   margin: auto;
   width: 500px;
-
-  form {
-    padding: 1rem;
-  }
-
-  .button {
-    margin-top: 4rem;
-    height: 50px;
-    cursor: pointer;
-  }
 }
 
-.modal-header {
+.modal__header {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   border-bottom: var.$col_bg solid 1px;
 }
 
-.modal-close {
+.modal__close {
   cursor: pointer;
   height: 20px;
   display: grid;
   place-items: center;
   font-size: 0.7rem;
+
+  img {
+    height: 20px;
+  }
+}
+
+.modal__form {
+  padding: 1rem;
+  display: grid;
+}
+
+.modal__input {
+  height: 30px;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  padding-left: 0.5rem;
+  border: none;
+}
+
+.modal__label {
+  padding-bottom: 0.5rem;
+}
+
+.modal .button {
+  margin-top: 4rem;
+  height: 50px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 650px) {
   .modal {
     width: 95%;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }

@@ -93,7 +93,7 @@
   height: 0.7rem;
 }
 
-#modal {
+.modal__wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -105,10 +105,6 @@
   display: none;
 }
 
-.modal-wrapper-active {
-  display: flex;
-}
-
 .modal {
   background: #bac2cf;
   border-radius: 1rem;
@@ -116,28 +112,46 @@
   margin: auto;
   width: 500px;
 }
-.modal form {
-  padding: 1rem;
-}
-.modal .button {
-  margin-top: 4rem;
-  height: 50px;
-  cursor: pointer;
-}
 
-.modal-header {
+.modal__header {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   border-bottom: #313745 solid 1px;
 }
 
-.modal-close {
+.modal__close {
   cursor: pointer;
   height: 20px;
   display: grid;
   place-items: center;
   font-size: 0.7rem;
+}
+.modal__close img {
+  height: 20px;
+}
+
+.modal__form {
+  padding: 1rem;
+  display: grid;
+}
+
+.modal__input {
+  height: 30px;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  padding-left: 0.5rem;
+  border: none;
+}
+
+.modal__label {
+  padding-bottom: 0.5rem;
+}
+
+.modal .button {
+  margin-top: 4rem;
+  height: 50px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 650px) {
@@ -411,17 +425,17 @@ header {
 .modal__point form h3 {
   padding: 1rem 1rem 0 1rem;
 }
-.modal__point .modal-buttons {
+.modal__point .modal__buttons {
   display: grid;
   grid-template-columns: 70% 30%;
   align-items: end;
   border-top: solid 1px;
   padding: 3rem 1rem 1rem 1rem;
 }
-.modal__point .modal-buttons .button {
+.modal__point .modal__buttons .button {
   margin-top: 0;
 }
-.modal__point .modal-buttons input[type=text] {
+.modal__point .modal__buttons input[type=text] {
   height: 50px;
   padding-left: 1rem;
   margin-right: 1rem;
@@ -739,17 +753,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 3rem;
+}
+.company__search .search__city-active {
+  height: 6rem;
 }
 .company__search .search__city_placeholder {
   color: rgba(255, 255, 255, 0.452);
   padding-left: 0.5rem;
 }
-.company__search .search__city_block-select {
-  display: flex;
-  height: 100%;
-}
 .company__search .search__city_select {
   position: absolute;
+  top: 0;
   right: 0;
   height: 100%;
   border-radius: 5px;
@@ -1622,17 +1637,6 @@ header {
     border-radius: 0 0 1rem 1rem;
   }
 }
-#willPost .modal form {
-  display: grid;
-}
-#willPost .modal form input[type=text] {
-  height: 30px;
-  margin-bottom: 1rem;
-}
-#willPost .modal form label {
-  padding-bottom: 0.5rem;
-}
-
 .willPost__undo {
   width: 1300px;
   margin: 0 auto;

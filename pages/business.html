@@ -112,7 +112,7 @@
             <span>редактировать</span>
           </div>
           <div>
-            <img src="../assets/img/delete.svg" alt="удалить" class="open-modal">
+            <img src="../assets/img/delete.svg" alt="удалить" class="open-modal" data-modal="modal__del_business">
             <span>удалить</span>
           </div>
         </div>
@@ -124,16 +124,16 @@
 
     </section>
 
-    <div id="modal">
-      <div class="modal">
-        <div class="modal-header">
+    <div id="modal__del_business" class="modal__wrapper">
+      <div class="modal" onclick="event.stopPropagation()">
+        <div class="modal__header">
           <h2>Удалить этот бизнес?</h2>
-          <div class="modal-close">
-            <img src="../assets/img/close.svg" alt="закрыть" class="modal-close">
+          <div class="modal__close">
+            <img src="../assets/img/close.svg" alt="закрыть">
             <span>закрыть</span>
           </div>
         </div>
-        <form>
+        <form class="modal__form">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque sequi deserunt quaerat, eum placeat dicta
           perferendis facilis reiciendis incidunt, pariatur, laboriosam error doloribus quos. Suscipit, animi fugit?
           Fuga, similique rerum?

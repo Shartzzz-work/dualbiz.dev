@@ -109,8 +109,8 @@
           </div>
 
           <div>
-            <a href="" class="button">Отправить баллы</a>
-            <a href="" class="button">Запросить баллы</a>
+            <a href="#" class="button open-modal" data-modal="modal__send_points">Отправить баллы</a>
+            <a href="#" class="button open-modal" data-modal="modal__get_points">Запросить баллы</a>
           </div>
         </div>
         <div class="block_actions">
@@ -135,10 +135,9 @@
             <p>Телефон:</p>
             <a href="tel:+79998887766">+7 (999) 888-77-66</a>
           </div>
-
           <div>
-            <a href="" class="button">Отправить баллы</a>
-            <a href="" class="button">Запросить баллы</a>
+            <a href="#" class="button open-modal" data-modal="modal__send_points">Отправить баллы</a>
+            <a href="#" class="button open-modal" data-modal="modal__get_points">Запросить баллы</a>
           </div>
         </div>
         <div class="block_actions">
@@ -151,6 +150,48 @@
         </div>
       </div>
     </section>
+
+    <div id="modal__send_points" class="modal__wrapper">
+      <div class="modal" onclick="event.stopPropagation()">
+        <div class="modal__header">
+          <h2>Отправить баллы</h2>
+          <div class="modal__close">
+            <img src="../assets/img/close.svg" alt="закрыть">
+            <span>закрыть</span>
+          </div>
+        </div>
+        <form class="modal__form">
+          <label class="modal__label">Сумма покупки</label>
+          <input type="text" class="modal__input">
+          <label class="modal__label">Вы отправите быллы от</label>
+          <input type="text" class="modal__input modal__input-active">
+          <label class="modal__label">Вы отправите</label>
+          <input type="text" class="modal__input modal__input-active">
+          <input type="submit" value="Отправить баллы" class="button">
+        </form>
+      </div>
+    </div>
+
+    <div id="modal__get_points" class="modal__wrapper">
+      <div class="modal" onclick="event.stopPropagation()">
+        <div class="modal__header">
+          <h2>Запросить отправку баллов мне</h2>
+          <div class="modal__close">
+            <img src="../assets/img/close.svg" alt="закрыть">
+            <span>закрыть</span>
+          </div>
+        </div>
+        <form class="modal__form">
+          <label class="modal__label">Сумма покупки</label>
+          <input type="text" class="modal__input">
+          <label class="modal__label">Вы должны получить</label>
+          <input type="text" class="modal__input modal__input-active">
+          <label class="modal__label">Перевести моей компании</label>
+          <input type="text" class="modal__input modal__input-active">
+          <input type="submit" value="Запросить перевод" class="button">
+        </form>
+      </div>
+    </div>
 
   </main>
 
