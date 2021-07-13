@@ -1059,12 +1059,6 @@ header {
 .tasks .card .block_actions :nth-child(2) img {
   height: 3rem;
 }
-.tasks .card .block_actions :nth-child(1)::after {
-  content: "перейти";
-}
-.tasks .card .block_actions :nth-child(2)::after {
-  content: "скрыть";
-}
 
 @media screen and (max-width: 760px) {
   .tasks .card {
