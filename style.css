@@ -1195,12 +1195,6 @@ header {
 .circle .card .block_actions :nth-child(3) img {
   height: 3rem;
 }
-.circle .card .block_actions :nth-child(1)::after {
-  content: "отправить сообщение";
-}
-.circle .card .block_actions :nth-child(2)::after {
-  content: "удалить из круга";
-}
 
 .circle__choice {
   padding: 3rem 1rem 0;
