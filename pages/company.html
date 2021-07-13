@@ -45,8 +45,8 @@
 
 
         <div class="nav__user_points">
-          <span class="open-modal" data-modal="modal__get_points">200</span> <img src="../assets/img/dislike.png" alt="баллов"
-            class="point_icon">
+          <span class="open-modal" data-modal="modal__get_points">200</span> <img src="../assets/img/dislike.png"
+            alt="баллов" class="point_icon">
           <img src="../assets/img/Settings.svg" alt="настройки" class="nav__user-img settings_icon">
         </div>
 
@@ -141,11 +141,17 @@
         <div class="search__city_block">
           <i class="search__city_placeholder">Выберите город</i>
         </div>
-        <select class="search__city_select">
-          <option>Москва</option>
-          <option>London</option>
-          <option>Длинный город</option>
-        </select>
+
+        <nav class="dropdown dropdown_searchCity">
+          <a href="#" class="dropdown__menu">Город <span class="dropdown__menu_arrow"></span></a>
+          <ul class="dropdown__list">
+            <li><a href="#">Санкт-Петербург</a></li>
+            <li><a href="#">Москва</a></li>
+            <li><a href="#">Ярославль</a></li>
+            <li><a href="#">Сочи</a></li>
+          </ul>
+        </nav>
+
       </div>
     </section>
     <section class="company__search">
@@ -154,7 +160,7 @@
         <option>USA</option>
       </select>
 
-      <div class="search__city search__city-active">
+      <div class="search__city">
         <div class="search__city_block">
           <span class="tag">Санкт-Петербург <a href="#" class="tag__close"><img src="../assets/img/close-tag.svg"
                 alt="закрыть тег" class="tag__close_img"></a></span>
@@ -168,14 +174,19 @@
                 alt="закрыть тег" class="tag__close_img"></a></span>
           <span class="tag">Санкт-Петербург <a href="#" class="tag__close"><img src="../assets/img/close-tag.svg"
                 alt="закрыть тег" class="tag__close_img"></a></span>
-          <span class="tag">Санкт-Петербург <a href="#" class="tag__close"><img src="../assets/img/close-tag.svg"
-                alt="закрыть тег" class="tag__close_img"></a></span>
+
         </div>
-        <select class="search__city_select search__city-active">
-          <option>Москва</option>
-          <option>London</option>
-          <option>Длинный город</option>
-        </select>
+
+        <nav class="dropdown dropdown_searchCity">
+          <a href="#" class="dropdown__menu">Город <span class="dropdown__menu_arrow"></span></a>
+          <ul class="dropdown__list">
+            <li class="active"><a href="#">Санкт-Петербург</a></li>
+            <li><a href="#">Москва</a></li>
+            <li><a href="#">Ярославль</a></li>
+            <li><a href="#">Сочи</a></li>
+          </ul>
+        </nav>
+
       </div>
     </section>
 

@@ -13,6 +13,7 @@ class NavEvent {
         if (event.target.classList.contains('settings_icon')) {
           document.querySelector(".settings").classList.toggle("settings-active");
         }
+
         // if (event.target.classList.contains('open-modal')) {
         //   modal.style = "display: flex";
         // }
@@ -81,6 +82,8 @@ if (document.querySelector('.fileInput')) {
   });
 }
 
+/* код модального окна */
+
 document.querySelectorAll('.open-modal').forEach(i => i.addEventListener('click', () => {
   const modalId = i.dataset.modal
 
@@ -91,4 +94,13 @@ document.querySelectorAll('.open-modal').forEach(i => i.addEventListener('click'
   document.querySelectorAll('.modal__wrapper').forEach(i => i.addEventListener('click', () => document.getElementById(modalId).style.display = ""));
 })
 )
+
+/* код dropdown */
+
+document.querySelectorAll('.dropdown__menu').forEach(i => {
+  i.addEventListener('click', () => {
+    document.querySelectorAll('.dropdown__menu_arrow').forEach(i => i.classList.toggle('active'))
+    document.querySelectorAll('.dropdown__list').forEach(i => i.classList.toggle('active'))
+  })
+})
 
