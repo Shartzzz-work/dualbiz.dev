@@ -1772,6 +1772,10 @@ header {
   margin-bottom: 0.8rem;
   border-radius: 4px;
   padding-left: 0.5rem;
+  border-width: thin;
+}
+.willPost .block-input .red__border {
+  border-color: #fd0303;
 }
 .willPost .block-textarea {
   padding: 1rem;
