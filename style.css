@@ -87,6 +87,11 @@
   display: flex;
 }
 
+.spinner__icon {
+  margin: auto;
+  height: 100px;
+}
+
 .button {
   display: inline-flex;
   padding: 0.5em 1em;
@@ -1695,7 +1700,7 @@ header {
   }
 }
 .willPost__undo {
-  width: 1300px;
+  max-width: 1300px;
   margin: 0 auto;
   margin-top: 2rem;
   display: flex;
@@ -1775,7 +1780,11 @@ header {
   border-width: thin;
 }
 .willPost .block-input .red__border {
-  border-color: #fd0303;
+  border: #bc5764 2px solid;
+  background-image: url("assets/img/unauthorised.svg");
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  background-size: 1rem;
 }
 .willPost .block-textarea {
   padding: 1rem;
@@ -1839,6 +1848,39 @@ header {
 .willPost__lastStep .button {
   width: 30%;
   margin: 3rem 0;
+}
+.willPost__lastStep .button--active {
+  height: 3.2rem;
+}
+.willPost__lastStep .button--no-active {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.willPost__lastStep .button__save {
+  background: #feefad;
+  color: #252933;
+  border-bottom: solid 4px #bac2cf;
+}
+
+.saveAddress__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.saveAddress__address {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: #bac2cf 2px solid;
+  border-bottom: #bac2cf 2px solid;
+  padding: 1.5rem 0;
+}
+.saveAddress__address .address {
+  background: #bac2cf;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 880px) {

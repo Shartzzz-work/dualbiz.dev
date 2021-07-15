@@ -105,7 +105,7 @@
         </div>
         <div class="block-input">
           <label>Название бизнеса</label>
-          <input type="text" class="red__border">
+          <input type="text" class="red__border" placeholder="обязательное поле">
           <label>Сайт компании</label>
           <input type="text">
           <label>Телефон</label>
@@ -151,10 +151,37 @@
           obcaecati reiciendis? Non magni, consectetur quos sit aut itaque accusamus impedit maxime necessitatibus
           consequuntur.</p>
       </div>
-      <a href="#modal" class="button open-modal" data-modal="modal__add_adres">Добавить адрес</a>
+      <a href="#modal" class="button open-modal" data-modal="modal__add_address">Добавить адрес</a>
+      <a href="#modal" class="button button--active open-modal" data-modal="modal__add_address">Активная</a>
+      <a href="#modal" class="button button--no-active">Неактивная</a>
+
+      <div class="willPost__saveAddress">
+        <div class="saveAddress__address">
+          <div class="address open-modal" data-modal="modal__change-address">
+            <span data-country="Россия"><strong>Россия:</strong></span><span data-city="Санкт-Петербург"> Санкт-Петербург,</span><span data-street="Угловой переулок д.3"> Угловой переулок д.3</span>
+          </div>
+          <div class="address open-modal" data-modal="modal__change-address">
+            <span data-country="Россия"><strong>Россия:</strong></span><span data-city="Санкт-Петербург"> Санкт-Петербург,</span><span data-street="Угловой переулок д.3"> Угловой переулок д.3</span>
+          </div>
+          <div class="address open-modal" data-modal="modal__change-address">
+            <span data-country="Россия"><strong>Россия:</strong></span><span data-city="Ярославль"> Ярославль,</span><span data-street="Толбухина д.4"> Толбухина д.4</span>
+          </div>
+          <div class="address open-modal" data-modal="modal__change-address">
+            <span data-country="Россия"><strong>Россия:</strong></span><span data-city="Санкт-Петербург"> Санкт-Петербург,</span><span data-street="Угловой переулок д.3"> Угловой переулок д.3</span>
+          </div>
+        </div>
+        <div class="saveAddress__buttons">
+          <a href="#modal" class="button open-modal" data-modal="modal__add_address">Добавить адрес</a>
+          <a href="#modal" class="button button__save open-modal" data-modal="spinner">Сохранить</a>
+        </div>
+      </div>
     </section>
 
-    <div id="modal__add_adres" class="modal__wrapper">
+    <div id="spinner" class="modal__wrapper">
+      <img src="../assets/img/oneLoopDualizmLogo.gif" alt="сохранить" class="spinner__icon">
+    </div>
+
+    <div id="modal__add_address" class="modal__wrapper">
       <div class="modal" onclick="event.stopPropagation()">
         <div class="modal__header">
           <h2>Добавить адрес</h2>
@@ -169,6 +196,25 @@
           <label class="modal__label">Адрес</label>
           <input type="text" class="modal__input">
           <input type="submit" value="Добавить" class="button">
+        </form>
+      </div>
+    </div>
+
+    <div id="modal__change-address" class="modal__wrapper">
+      <div class="modal" onclick="event.stopPropagation()">
+        <div class="modal__header">
+          <h2>Изменить адрес</h2>
+          <div class="modal__close">
+            <img src="../assets/img/close.svg" alt="закрыть">
+            <span>закрыть</span>
+          </div>
+        </div>
+        <form class="modal__form">
+          <label class="modal__label">Город</label>
+          <input type="text" class="modal__input changeCity" value="">
+          <label class="modal__label">Адрес</label>
+          <input type="text" class="modal__input changeStreet" value="">
+          <input type="submit" value="Изменить" class="button">
         </form>
       </div>
     </div>

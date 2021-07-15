@@ -1,7 +1,7 @@
 @use '../var';
 
 .willPost__undo {
-  width: 1300px;
+  max-width: 1300px;
   margin: 0 auto;
   margin-top: 2rem;
   display: flex;
@@ -88,11 +88,14 @@
       border-radius: 4px;
       padding-left: 0.5rem;
       border-width: thin;
-      
     }
 
     .red__border {
-      border-color: rgb(253, 3, 3);
+      border: var.$col-red 2px solid;
+      background-image: url('assets/img/unauthorised.svg');
+      background-repeat: no-repeat;
+      background-position: right 5px center ;
+      background-size: 1rem;
     }
   }
 
@@ -109,7 +112,6 @@
       padding: 0.5rem;
     }
   }
-  
 }
 
 .willPost__percent {
@@ -169,6 +171,43 @@
   .button {
     width: 30%;
     margin: 3rem 0;
+  }
+
+  .button--active {
+    height: 3.2rem;
+  }
+
+  .button--no-active {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .button__save {
+    background: var.$col-logo;
+    color: var.$col-dark;
+    border-bottom: solid 4px var.$col-text;
+  }
+}
+
+.saveAddress__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.saveAddress__address {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: var.$col-text 2px solid;
+  border-bottom: var.$col-text 2px solid;
+  padding: 1.5rem 0;
+
+  .address {
+    background: var.$col-text;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 0 .5rem .5rem 0;
+    cursor: pointer;
   }
 }
 
@@ -260,7 +299,7 @@
   }
 
   #willPost {
-    font-size: .8rem;
+    font-size: 0.8rem;
     .modal {
       width: 90%;
     }

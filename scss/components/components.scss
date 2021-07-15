@@ -1,6 +1,8 @@
 @use '../var';
 @use '../mixin';
 
+@use 'spinner.scss';
+
 .button {
   display: inline-flex;
   padding: 0.5em 1em;

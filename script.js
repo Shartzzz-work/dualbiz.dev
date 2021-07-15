@@ -92,6 +92,11 @@ document.querySelectorAll('.open-modal').forEach(i => i.addEventListener('click'
   document.querySelectorAll('.modal__close').forEach(i => i.addEventListener('click', () => document.getElementById(modalId).style.display = ""));
 
   document.querySelectorAll('.modal__wrapper').forEach(i => i.addEventListener('click', () => document.getElementById(modalId).style.display = ""));
+
+  console.log(i.childNodes[2].dataset.city);
+
+  document.querySelector('.changeCity').value = `${i.childNodes[2].dataset.city}`;
+  document.querySelector('.changeStreet').value = `${i.childNodes[3].dataset.street}`;
 })
 )
 
