@@ -104,6 +104,22 @@
   justify-content: center;
   align-items: center;
 }
+.button.button--active {
+  height: 3.2rem;
+}
+.button.button--no-active {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.button.button__save {
+  background: #feefad;
+  color: #252933;
+  border-bottom: solid 4px #bac2cf;
+}
+.button.button__del {
+  background: #bc5764;
+  border-bottom: solid 4px #4d4960;
+}
 
 .progress__bar {
   background-color: #252933;
@@ -1849,18 +1865,6 @@ header {
   width: 30%;
   margin: 3rem 0;
 }
-.willPost__lastStep .button--active {
-  height: 3.2rem;
-}
-.willPost__lastStep .button--no-active {
-  opacity: 0.3;
-  cursor: not-allowed;
-}
-.willPost__lastStep .button__save {
-  background: #feefad;
-  color: #252933;
-  border-bottom: solid 4px #bac2cf;
-}
 
 .saveAddress__buttons {
   display: flex;
@@ -1881,6 +1885,12 @@ header {
   border-radius: 10px;
   margin: 0 0.5rem 0.5rem 0;
   cursor: pointer;
+}
+
+.modal__buttons {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 880px) {

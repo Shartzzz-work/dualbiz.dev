@@ -173,20 +173,7 @@
     margin: 3rem 0;
   }
 
-  .button--active {
-    height: 3.2rem;
-  }
 
-  .button--no-active {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-
-  .button__save {
-    background: var.$col-logo;
-    color: var.$col-dark;
-    border-bottom: solid 4px var.$col-text;
-  }
 }
 
 .saveAddress__buttons {
@@ -209,6 +196,12 @@
     margin: 0 .5rem .5rem 0;
     cursor: pointer;
   }
+}
+
+.modal__buttons {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 880px) {
