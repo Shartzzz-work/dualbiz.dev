@@ -93,8 +93,9 @@ document.querySelectorAll('.open-modal').forEach(i => i.addEventListener('click'
 
   document.querySelectorAll('.modal__wrapper').forEach(i => i.addEventListener('click', () => document.getElementById(modalId).style.display = ""));
 
-  document.querySelector('.changeCity').value = `${i.childNodes[2].innerText}`;
-  document.querySelector('.changeStreet').value = `${i.childNodes[4].innerText}`;
+  // закоментил так как мне нужно было значение из массива в модальное перекинуть, а тут для теста берется первое в DOM
+  // document.querySelector('.changeCity').value = `${i.childNodes[2].innerText}`;
+  // document.querySelector('.changeStreet').value = `${i.childNodes[4].innerText}`;
 })
 )
 
