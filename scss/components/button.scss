@@ -1,0 +1,34 @@
+@use '../var';
+
+.button {
+  display: inline-flex;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: var.$col-icon;
+  color: #fff;
+  border-bottom: solid 4px var.$col-logo;
+  border-radius: 3px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  &.button--active {
+    height: 3.2rem;
+  }
+
+  &.button--no-active {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  &.button__save {
+    background: var.$col-logo;
+    color: var.$col-dark;
+    border-bottom: solid 4px var.$col-text;
+  }
+
+  &.button__del {
+    background: var.$col-red;
+    border-bottom: solid 4px var.$col-icon;
+  }
+}
