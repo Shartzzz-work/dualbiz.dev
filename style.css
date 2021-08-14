@@ -1615,13 +1615,11 @@ header {
   color: #bac2cf;
   border-radius: 0 2rem 2rem 2rem;
 }
-.message__body .input__bubble::after {
-  content: "23.05.2021";
-  position: absolute;
-  bottom: -1rem;
-  left: 0;
+.message__body .input__bubble__after {
+  position: relative;
+  bottom: 1rem;
+  left: 1rem;
   font-size: 0.8rem;
-  color: #000;
 }
 .message__body .output__bubble {
   position: relative;
@@ -1632,13 +1630,12 @@ header {
   color: #bac2cf;
   border-radius: 2rem 0 2rem 2rem;
 }
-.message__body .output__bubble::after {
-  content: "23.05.2021";
-  position: absolute;
-  bottom: -1rem;
-  right: 0;
+.message__body .output__bubble__after {
+  position: relative;
+  align-self: flex-end;
+  bottom: 1rem;
+  right: 1rem;
   font-size: 0.8rem;
-  color: #000;
 }
 
 .message__settings-active {

@@ -152,13 +152,11 @@
     border-radius: 0 2rem 2rem 2rem;
   }
 
-  .input__bubble::after {
-    content: "23.05.2021";
-    position: absolute;
-    bottom: -1rem;
-    left: 0;
+  .input__bubble__after {
+    position: relative;
+    bottom: 1rem;
+    left: 1rem;
     font-size: 0.8rem;
-    color: #000;
   }
 
   .output__bubble {
@@ -171,13 +169,12 @@
     border-radius: 2rem 0 2rem 2rem;
   }
 
-  .output__bubble::after {
-    content: "23.05.2021";
-    position: absolute;
-    bottom: -1rem;
-    right: 0;
+  .output__bubble__after {
+    position: relative;
+    align-self: flex-end;
+    bottom: 1rem;
+    right: 1rem;
     font-size: 0.8rem;
-    color: #000;
   }
 }
 
