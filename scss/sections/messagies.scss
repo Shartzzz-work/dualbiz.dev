@@ -58,6 +58,7 @@
   width: 80%;
   font-size: 0.9rem;
   cursor: pointer;
+  color: white;
 
   img {
     height: 80%;
@@ -111,9 +112,6 @@
     }
   }
 
-  .message__settings::after {
-    content: "Контакты";
-  }
 }
 
 .massage__footer {
