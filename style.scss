@@ -20,6 +20,7 @@
 @use 'scss/sections/transaction';
 @use 'scss/sections/messagies';
 @use 'scss/sections/willPost';
+@use 'scss/components/bage';
 
 body {
   background: var.$col_bg;

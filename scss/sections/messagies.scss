@@ -143,6 +143,12 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+
+  &:hover {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 
   .input__bubble {
     position: relative;
