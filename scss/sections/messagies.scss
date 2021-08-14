@@ -131,11 +131,24 @@
     padding-left: 1rem;
   }
 
-  img {
-    height: 80%;
-    width: 2cm;
-    padding-left: 1rem;
+  button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+  /* отображаем курсор в виде руки при наведении */
+    cursor: pointer;
+
+    img {
+      height: 80%;
+      width: 2cm;
+      padding-left: 1rem;
+    }
+
   }
+  
+  
 }
 
 .message__body {
