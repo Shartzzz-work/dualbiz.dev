@@ -94,13 +94,13 @@
             <p>Messenger</p>
           </header>
           <div class="users">
-            <div class="user__item">
+            <a href="/" class="user__item">
               <img src="../assets/img/prstar1.jpg" alt="">
               <div>
                 <h2>Prstar</h2>
                 <p>Краткое описание компании</p>
               </div>
-            </div>
+            </a>
 
             <div class="user__item">
               <img src="../assets/img/prstar2.jpg" alt="">
@@ -118,13 +118,13 @@
               </div>
             </div>
 
-            <div class="user__item">
+            <a class="user__item">
               <img src="../assets/img/prstar1.jpg" alt="">
               <div>
                 <h2>Prstar</h2>
                 <p>Краткое описание компании</p>
               </div>
-            </div>
+            </a>
 
             <div class="user__item">
               <img src="../assets/img/prstar2.jpg" alt="">
@@ -170,29 +170,32 @@
             <p class="input__bubble">
               Первое входящее
             </p>
+            <p class="input__bubble__after">
+              "23.05.2021"
+            </p>
+
             <p class="input__bubble">
               Второе
             </p>
+            <p class="input__bubble__after">
+              "23.05.2021"
+            </p>
+
             <p class="output__bubble">
               Первое исходящее
             </p>
-            <p class="output__bubble">
-              Первое исходящее
-            </p>
-            <p class="output__bubble">
-              Первое исходящее
-            </p>
-            <p class="output__bubble">
-              Первое исходящее
-            </p>
-            <p class="output__bubble">
-              Первое исходящее
+            <p class="output__bubble__after">
+              "23.05.2021"
             </p>
           </div>
-          <div class="massage__footer">
-            <input type="text" value="Введите сообщение">
-            <img src="../assets/img/55.svg" alt="">
-          </div>
+          <form method="post" action="/messagies/view/create/#(markcompany.id)">
+            <div class="massage__footer">
+              <input type="text" value="" placeholder="Введите сообщение">
+              <button>
+                <img src="../assets/img/55.svg" alt="">
+              </button>
+            </div>
+        </form>
         </div>
       </div>
     </section>

@@ -58,6 +58,7 @@
   width: 80%;
   font-size: 0.9rem;
   cursor: pointer;
+  color: white;
 
   img {
     height: 80%;
@@ -111,9 +112,6 @@
     }
   }
 
-  .message__settings::after {
-    content: "Контакты";
-  }
 }
 
 .massage__footer {
@@ -124,18 +122,33 @@
   padding: 2rem;
   border-radius: 0 0 1rem;
 
+  
   input {
     width: 100%;
-    height: 100%;
+    height: 1cm;
     border: none;
     font-size: 1rem;
     padding-left: 1rem;
   }
 
-  img {
-    height: 80%;
-    padding-left: 1rem;
+  button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+  /* отображаем курсор в виде руки при наведении */
+    cursor: pointer;
+
+    img {
+      height: 80%;
+      width: 2cm;
+      padding-left: 1rem;
+    }
+
   }
+  
+  
 }
 
 .message__body {
@@ -160,13 +173,11 @@
     border-radius: 0 2rem 2rem 2rem;
   }
 
-  .input__bubble::after {
-    content: "23.05.2021";
-    position: absolute;
-    bottom: -1rem;
-    left: 0;
+  .input__bubble__after {
+    position: relative;
+    bottom: 1rem;
+    left: 1rem;
     font-size: 0.8rem;
-    color: #000;
   }
 
   .output__bubble {
@@ -179,13 +190,12 @@
     border-radius: 2rem 0 2rem 2rem;
   }
 
-  .output__bubble::after {
-    content: "23.05.2021";
-    position: absolute;
-    bottom: -1rem;
-    right: 0;
+  .output__bubble__after {
+    position: relative;
+    align-self: flex-end;
+    bottom: 1rem;
+    right: 1rem;
     font-size: 0.8rem;
-    color: #000;
   }
 }
 
