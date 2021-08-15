@@ -31,8 +31,14 @@
       justify-content: space-evenly;
     }
 
+    :nth-child(2) {
+      p {
+        text-align:center;
+      }
+    }
+
     img {
-      max-height: 100px;
+      max-height: 50px;
     }
   }
 

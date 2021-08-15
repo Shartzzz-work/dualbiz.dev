@@ -120,6 +120,17 @@
   background: #bc5764;
   border-bottom: solid 4px #4d4960;
 }
+.button.button__yellow {
+  background: #feefad;
+  border-bottom: solid 4px #bac2cf;
+  color: #252933;
+  font-weight: 600;
+}
+.button.button__grey {
+  background: #46567a;
+  border-bottom: solid 4px #627295;
+  margin: 0 1rem;
+}
 
 .progress__bar {
   background-color: #252933;
@@ -1410,8 +1421,11 @@ header {
   align-items: center;
   justify-content: space-evenly;
 }
+.transaction .card__block :nth-child(2) p {
+  text-align: center;
+}
 .transaction .card__block img {
-  max-height: 100px;
+  max-height: 50px;
 }
 .transaction .card__block_detale {
   display: flex;

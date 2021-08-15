@@ -31,4 +31,17 @@
     background: var.$col-red;
     border-bottom: solid 4px var.$col-icon;
   }
+
+  &.button__yellow {
+    background: var.$col-logo;
+    border-bottom: solid 4px var.$col-text;
+    color: var.$col-dark;
+    font-weight: 600;
+  }
+
+  &.button__grey {
+    background: #46567a;
+    border-bottom: solid 4px #627295;
+    margin: 0 1rem;
+  }
 }
