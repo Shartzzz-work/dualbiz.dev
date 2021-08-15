@@ -1553,7 +1553,7 @@ header {
   color: #000;
   width: 150%;
   height: 5rem;
-  left: -3rem;
+  left: 0rem;
 }
 
 .chat__messagies {
