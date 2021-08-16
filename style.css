@@ -1759,6 +1759,69 @@ header {
     border-radius: 0 0 1rem 1rem;
   }
 }
+.help {
+  max-width: 750px;
+  padding: 3rem 1.5rem;
+  margin: 0 auto;
+  height: 100%;
+}
+.help .chat__container {
+  background: #1f2251;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  box-shadow: -1rem 0 3rem #000;
+}
+
+.chat__help {
+  border-radius: 5rem 1rem 1rem 2rem;
+  background: #bac2cf;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 6rem 1fr 5rem;
+  z-index: 1;
+}
+
+.help__body {
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.help__body .input__bubble {
+  position: relative;
+  align-self: flex-start;
+  background: #4d4960;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  color: #bac2cf;
+  border-radius: 0 2rem 2rem 2rem;
+}
+.help__body .input__bubble__after {
+  position: relative;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 0.8rem;
+}
+.help__body .output__bubble {
+  position: relative;
+  align-self: flex-end;
+  background: #252933;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  color: #bac2cf;
+  border-radius: 2rem 0 2rem 2rem;
+}
+.help__body .output__bubble__after {
+  position: relative;
+  align-self: flex-end;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.8rem;
+}
+
 .willPost__undo {
   max-width: 1300px;
   margin: 0 auto;
