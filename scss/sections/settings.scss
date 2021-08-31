@@ -1,0 +1,147 @@
+@use '../var';
+
+.settings {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+
+  .block-img {
+    display: grid;
+    grid-template-rows: 75% 20%;
+    justify-items: center;
+    align-content: space-between;
+    margin-right: 0.5rem;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+    }
+
+    input[type="file"] {
+      position: absolute;
+      left: 0;
+      opacity: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .fileInput__zone {
+      // position: absolute;
+      // padding: .3rem;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border: 3px dotted var.$col-text;
+      border-radius: 1rem;
+
+      &.active {
+        background-color: var.$col-icon;
+        color: #fff;
+      }
+    }
+
+    label {
+      display: inline-block;
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.settings__user {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 1.5rem;
+
+
+  .block-input {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: rgb(255, 255, 255);
+    border-radius: 1rem;
+    margin-left: 0.5rem;
+
+    h2 {
+      padding-bottom: 1rem;
+    }
+
+    label {
+      margin-bottom: 5px;
+    }
+
+    input,
+    select {
+      height: 35px;
+      margin-bottom: 0.8rem;
+      border-radius: 4px;
+      padding-left: 0.5rem;
+      border-width: thin;
+    }
+  }
+}
+
+.settings__block {
+  max-width: 600px;
+  background: rgb(255, 255, 255);
+  box-shadow: -1rem 0 3rem #000;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+
+  h2 {
+    padding-bottom: 1rem;
+
+    span {
+      font-size: 2rem;
+      color: #98483b;
+    }
+  }
+
+  li {
+    padding-bottom: 1rem;
+  }
+
+  .button {
+    margin: 1rem 0;
+  }
+}
+
+.settings__block_select {
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 560px) {
+  .settings {
+    .block-img {
+      height: 200px;
+      padding-bottom: 0.5rem;
+
+      img {
+        width: 50%;
+      }
+
+      .fileInput__zone {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .settings__user {
+    grid-template-columns: 1fr;
+    grid-auto-flow: 1fr 1fr;
+  }
+}

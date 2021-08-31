@@ -22,6 +22,8 @@
 @use 'scss/sections/help';
 @use 'scss/sections/willPost';
 @use 'scss/components/bage';
+@use 'scss/sections/settings.scss';
+@use 'scss/sections/login.scss';
 
 body {
   background: var.$col_bg;

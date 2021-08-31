@@ -209,53 +209,6 @@ header {
   }
 }
 
-.settings {
-  position: absolute;
-  right: 0;
-  left: 0;
-  max-width: 1250px;
-  margin: 0 auto;
-  display: none;
-  z-index: 2;
-}
-.settings-active {
-  display: block;
-}
-
-.settings__block {
-  position: absolute;
-  max-width: 500px;
-  background: rgb(255, 255, 255);
-  box-shadow: -1rem 0 3rem #000;
-  right: 0;
-  top: 0;
-  padding: 1.5rem;
-  border-radius: 0 0 0.5rem 0.5rem;
-
-  h2 {
-    padding-bottom: 1rem;
-
-    span {
-      font-size: 2rem;
-      color: #98483b;
-    }
-  }
-
-  li {
-    padding-bottom: 1rem;
-  }
-
-  .button {
-    margin: 1rem 0;
-  }
-}
-
-.settings__block_select {
-  width: 100%;
-  height: 2rem;
-  margin-bottom: 1rem;
-}
-
 .modal__point {
   width: 600px;
   ul, li {

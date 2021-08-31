@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html dir="auto" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Заголовок | текущей | страницы</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <!-- <meta name="color-scheme" content="light dark"> -->
+  <meta name="description" content="Мета описание сайта">
+  <meta name="keywords" content="Ключевые, слова, сайта">
+  <meta name="author" content="Shartzzz">
+  <link rel="stylesheet" href="../style.css">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./assets/favicon/favicon.svg" type="image/svg+xml"> -->
+  <!-- <link rel="apple-touch-icon" href="./assets/favicon/favicon.png"> -->
+  <!-- <link rel="manifest" href="manifest.json"> -->
+</head>
+
+<body>
+  <header id="header">
+    <nav class="header__container">
+      <a href="/index.html" class="nav__logo">Dualism</a>
+      <ul class="nav__menu">
+        <li class="nav-item">
+          <a href="tasks.html" class="nav-link-active">Задачи</a>
+        </li>
+        <li class="nav-item">
+          <a href="business.html" class="nav-link">Бизнес</a>
+        </li>
+        <li class="nav-item">
+          <a href="company.html" class="nav-link">Компании</a>
+        </li>
+        <li class="nav-item">
+          <a href="circle.html" class="nav-link">Круг</a>
+        </li>
+        <li class="nav-item">
+          <a href="transaction.html" class="nav-link">Переводы</a>
+        </li>
+        <li class="nav-item">
+          <a href="messagies.html" class="nav-link">Сообщения</a>
+        </li>
+        <li class="nav-item">
+          <a href="help.html" class="nav-link">Помощь</a>
+        </li>
+      </ul>
+      <div class="nav__user">
+        <img src="../assets/img/ic-users-default.svg" alt="вход/выход" class="nav__user-img user_icon">
+        <img src="../assets/img/Settings.svg" alt="настройки" class="nav__user-img settings_icon">
+        <select name="language" class="nav__user-select">
+          <option>Ru</option>
+          <option>En</option>
+        </select>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="register">
+
+    <section class="register">
+      <div class="register_label">
+        <span class="active">Бизнесмен</span>
+        <span>Покупатель</span>
+      </div>
+      <form class="login__form">
+        <h1>Зарегистрироваться</h1>
+        <div>
+          <label>Название бизнеса:</label>
+          <input type="text" placeholder="Введите название бизнеса" class="active">
+          <label>Email:</label>
+          <input type="text" placeholder="Введите email" class="active">
+          <div class="register__pass">
+            <label>Пароль:
+              <input type="text" placeholder="Введите пароль" class="active"></label>
+            <label>Подтвердить пароль:
+              <input type="text" placeholder="Подтвердите пароль" class="active"></label>
+          </div>
+          <label>Ваша страна:</label>
+          <input type="text" placeholder="Введите вашу страну" class="active">
+        </div>
+        <input type="submit" class="button" value="Зарегистрироваться">
+      </form>
+      <div class="register_label">
+        <span>Бизнесмен</span>
+        <span class="active">Покупатель</span>
+      </div>
+      <form class="login__form">
+        <h1>Зарегистрироваться</h1>
+        <div>
+          <label>Ваше имя:</label>
+          <input type="text" placeholder="Введите ваше имя" class="active">
+          <label>Email:</label>
+          <input type="text" placeholder="Введите email" class="active">
+          <div class="register__pass">
+            <label>Пароль:
+              <input type="text" placeholder="Введите пароль" class="active"></label>
+            <label>Подтвердить пароль:
+              <input type="text" placeholder="Подтвердите пароль" class="active"></label>
+          </div>
+          <label>Ваша страна:</label>
+          <input type="text" placeholder="Введите вашу страну" class="active">
+        </div>
+        <input type="submit" class="button" value="Зарегистрироваться">
+      </form>
+    </section>
+
+  </main>
+
+
+  <script src="../script.js"></script>
+</body>
+
+</html>

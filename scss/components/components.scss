@@ -72,3 +72,11 @@
     height: 0.7rem;
   }
 }
+
+.red__border {
+  border: var.$col-red 2px solid;
+  background-image: url("assets/img/unauthorised.svg");
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  background-size: 1rem;
+}
