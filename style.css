@@ -2084,20 +2084,49 @@ header {
   margin: 0 auto;
   padding: 3rem 1rem;
 }
-.settings .block-img {
+.settings .settings__user {
+  height: auto;
+  max-height: 300px;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.settings .settings__user .block-input {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: white;
+  border-radius: 1rem;
+  margin-left: 0.5rem;
+}
+.settings .settings__user .block-input h2 {
+  padding-bottom: 1rem;
+}
+.settings .settings__user .block-input label {
+  margin-bottom: 5px;
+}
+.settings .settings__user .block-input input,
+.settings .settings__user .block-input select {
+  height: 35px;
+  margin-bottom: 0.8rem;
+  border-radius: 4px;
+  padding-left: 0.5rem;
+  border-width: thin;
+}
+.settings .settings__user .block-img {
   display: grid;
   grid-template-rows: 75% 20%;
   justify-items: center;
   align-content: space-between;
   margin-right: 0.5rem;
 }
-.settings .block-img img {
+.settings .settings__user .block-img img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 1rem;
 }
-.settings .block-img input[type=file] {
+.settings .settings__user .block-img input[type=file] {
   position: absolute;
   left: 0;
   opacity: 0;
@@ -2106,7 +2135,7 @@ header {
   width: 100%;
   cursor: pointer;
 }
-.settings .block-img .fileInput__zone {
+.settings .settings__user .block-img .fileInput__zone {
   height: 100%;
   width: 100%;
   display: flex;
@@ -2116,11 +2145,11 @@ header {
   border: 3px dotted #bac2cf;
   border-radius: 1rem;
 }
-.settings .block-img .fileInput__zone.active {
+.settings .settings__user .block-img .fileInput__zone.active {
   background-color: #4d4960;
   color: #fff;
 }
-.settings .block-img label {
+.settings .settings__user .block-img label {
   display: inline-block;
   position: relative;
   height: 100%;
@@ -2129,36 +2158,6 @@ header {
 .settings .exit {
   margin-top: 2rem;
   background: #bc5764;
-}
-
-.settings__user {
-  height: auto;
-  max-height: 300px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 1.5rem;
-}
-.settings__user .block-input {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  background: white;
-  border-radius: 1rem;
-  margin-left: 0.5rem;
-}
-.settings__user .block-input h2 {
-  padding-bottom: 1rem;
-}
-.settings__user .block-input label {
-  margin-bottom: 5px;
-}
-.settings__user .block-input input,
-.settings__user .block-input select {
-  height: 35px;
-  margin-bottom: 0.8rem;
-  border-radius: 4px;
-  padding-left: 0.5rem;
-  border-width: thin;
 }
 
 .settings__block {
