@@ -2115,9 +2115,14 @@ header {
   height: 100%;
   width: 100%;
 }
+.settings .exit {
+  margin-top: 2rem;
+  background: #bc5764;
+}
 
 .settings__user {
   height: auto;
+  max-height: 300px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 1.5rem;
@@ -2202,11 +2207,22 @@ header {
 .login h1,
 .refresh-pass h1,
 .register h1 {
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .register .login__form {
   border-radius: 0 0.5rem 0.5rem;
+}
+
+.login__alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2.5rem;
+  background: #f8b8b8;
+  margin-bottom: 1rem;
+  border-radius: 5px;
 }
 
 .login__form {
@@ -2218,7 +2234,7 @@ header {
 .login__form label {
   width: 100%;
 }
-.login__form input[type=text] {
+.login__form input[type=text], .login__form select {
   background-color: inherit;
   border: none;
   border-bottom: #4d4960 2px solid;
@@ -2227,7 +2243,7 @@ header {
   margin: 0.5rem 0 1.5rem;
   padding: 0.5rem 0;
 }
-.login__form input[type=text]:focus {
+.login__form input[type=text]:focus, .login__form select:focus {
   padding-left: 0.5rem;
 }
 .login__form input[type=submit] {
