@@ -8,8 +8,7 @@
   .settings__user {
     
     height: auto;
-    max-height: 300px;
-    margin-bottom: 5rem;
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -41,6 +40,7 @@
 
     .block-img {
       display: grid;
+      max-height: 500px;
       grid-template-rows: 75% 20%;
       justify-items: center;
       align-content: space-between;
@@ -64,7 +64,8 @@
       }
   
       .fileInput__zone {
-        height: 100%;
+        padding: 0.7rem;
+        height: 6rem;
         width: 100%;
         display: flex;
         align-items: center;
@@ -86,11 +87,23 @@
         width: 100%;
       }
     }
+
+    
+    
+
   }
 
   
+  .button {
+    margin-top: 1rem;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0.7rem;
+  }
   
-
   .exit {
     margin-top: 2rem;
     background: var.$col-red;

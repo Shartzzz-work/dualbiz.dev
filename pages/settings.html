@@ -65,11 +65,12 @@
 
   <main id="settings">
     <section class="settings">
-        <form class="settings__user">
+      <form>
+        <div class="settings__user">
           <div class="block-img">
             <img src="../assets/img/7.jpeg" alt="">
             <label for="fileInput">
-              <div class="fileInput__zone">Клинкните, или перasfasdетащите файл</div>
+              <div class="fileInput__zone">Для лучшего результата используйте изображение не меньше 128px на </div>
               <input type="file" class="fileInput">
             </label>
           </div>
@@ -77,11 +78,28 @@
           <div class="block-input">
             <h2>Илья</h2>
             <input type="text" placeholder="Изменить имя">
-            <input type="submit" class="button" value="Сохранить изменения">
-          </div>
-          
-        </form>
+            
+            <select class="settings__block_select">
+              <option>Основной язык</option>
+              <option>Русский</option>
+              <option>England</option>
+            </select>
+            <select class="settings__block_select">
+              <option>Страна</option>
+              <option>Россия</option>
+              <option>USA</option>
+            </select>
 
+          </div>
+        
+          
+          
+
+        </div>
+        
+        <input type="submit" class="button" value="Сохранить изменения">
+        
+      </form>
       <div class="settings__block">
         <h2>Баллов на вашем аккаунте: <span>200</span></h2>
         <ol>
@@ -96,16 +114,7 @@
             кругу.</li>
         </ol>
         <a href="#" class="button">Получить баллы</a>
-        <select class="settings__block_select">
-          <option>Основной язык</option>
-          <option>Русский</option>
-          <option>England</option>
-        </select>
-        <select class="settings__block_select">
-          <option>Страна</option>
-          <option>Россия</option>
-          <option>USA</option>
-        </select>
+        
       </div>
 
       <a href="#" class="button exit">Выйти</a>
