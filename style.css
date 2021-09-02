@@ -207,6 +207,17 @@
   background-size: 1rem;
 }
 
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2.5rem;
+  background: #f8b8b8;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
 .modal__wrapper {
   position: fixed;
   top: 0;
@@ -2212,17 +2223,6 @@ header {
 
 .register .login__form {
   border-radius: 0 0.5rem 0.5rem;
-}
-
-.login__alert {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 2.5rem;
-  background: #f8b8b8;
-  margin-bottom: 1rem;
-  border-radius: 5px;
 }
 
 .login__form {
