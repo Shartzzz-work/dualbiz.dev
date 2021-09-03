@@ -2163,6 +2163,7 @@ header {
   width: 100%;
   margin-bottom: 2rem;
   padding: 0.7rem;
+  font-size: medium;
 }
 .settings .exit {
   margin-top: 2rem;
