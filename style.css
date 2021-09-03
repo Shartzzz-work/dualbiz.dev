@@ -2168,15 +2168,35 @@ header {
 .settings .exit {
   margin-top: 2rem;
   background: #bc5764;
+  text-align: center;
 }
 
 .settings__block {
   max-width: 600px;
   background: white;
   box-shadow: -1rem 0 3rem #000;
-  padding: 1.5rem;
+  padding-top: 1.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   border-radius: 0.5rem;
   margin: 0 auto;
+}
+.settings__block .input-getPoints {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 1rem;
+}
+.settings__block .input-getPoints input {
+  margin-top: 1rem;
+  height: 44px;
+  border-radius: 4px;
+  padding-left: 0.5rem;
+  margin-right: 1rem;
+}
+.settings__block .input-getPoints .button {
+  height: 45px;
+  margin-left: 1rem;
+  text-align: center;
 }
 .settings__block h2 {
   padding-bottom: 1rem;
@@ -2187,9 +2207,6 @@ header {
 }
 .settings__block li {
   padding-bottom: 1rem;
-}
-.settings__block .button {
-  margin: 1rem 0;
 }
 
 .settings__block_select {
