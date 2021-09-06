@@ -65,21 +65,41 @@
 
   <main id="settings">
     <section class="settings">
-      <div class="settings__user">
-        <div class="block-img">
-          <img src="../assets/img/7.jpeg" alt="">
-          <label for="fileInput">
-            <div class="fileInput__zone">Клинкните, или перетащите файл</div>
-            <input type="file" class="fileInput">
-          </label>
-        </div>
-        <form class="block-input">
-          <h2>Илья</h2>
-          <input type="text" placeholder="Изменить имя">
-          <input type="submit" class="button" value="Сохранить изменения">
-        </form>
-      </div>
+      <form>
+        <div class="settings__user">
+          <div class="block-img">
+            <img src="../assets/img/7.jpeg" alt="">
+            <label for="fileInput">
+              <div class="fileInput__zone">Для лучшего результата используйте изображение не меньше 128px на </div>
+              <input type="file" class="fileInput">
+            </label>
+          </div>
+        
+          <div class="block-input">
+            <h2>Илья</h2>
+            <input type="text" placeholder="Изменить имя">
+            
+            <select class="settings__block_select">
+              <option>Основной язык</option>
+              <option>Русский</option>
+              <option>England</option>
+            </select>
+            <select class="settings__block_select">
+              <option>Страна</option>
+              <option>Россия</option>
+              <option>USA</option>
+            </select>
 
+          </div>
+        
+          
+          
+
+        </div>
+        
+        <input type="submit" class="button" value="Сохранить изменения">
+        
+      </form>
       <div class="settings__block">
         <h2>Баллов на вашем аккаунте: <span>200</span></h2>
         <ol>
@@ -93,17 +113,12 @@
             вашем
             кругу.</li>
         </ol>
-        <a href="#" class="button">Получить баллы</a>
-        <select class="settings__block_select">
-          <option>Основной язык</option>
-          <option>Русский</option>
-          <option>England</option>
-        </select>
-        <select class="settings__block_select">
-          <option>Страна</option>
-          <option>Россия</option>
-          <option>USA</option>
-        </select>
+
+        <div class="input-getPoints">
+          <input type="text" placeholder="Изменить имя">
+          <a href="#" class="button">Получить баллы</a>
+        </div>
+        
       </div>
 
       <a href="#" class="button exit">Выйти</a>
