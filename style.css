@@ -434,7 +434,7 @@ header {
   background-color: #feefad;
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1300px) {
   .header__container {
     grid-template-columns: auto auto;
   }
