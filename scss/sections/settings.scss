@@ -3,7 +3,35 @@
 .settings {
   max-width: 600px;
   margin: 0 auto;
-  padding: 3rem 1rem;
+
+  .settings__businessman {
+    height: auto;
+
+    .block-input {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 1rem;
+      background: rgb(255, 255, 255);
+      border-radius: 1rem;
+  
+      h2 {
+        padding-bottom: 1rem;
+      }
+  
+      label {
+        margin-bottom: 5px;
+      }
+  
+      input,
+      select {
+        height: 35px;
+        margin-bottom: 0.8rem;
+        border-radius: 4px;
+        padding-left: 0.5rem;
+        border-width: thin;
+      }
+    }
+  }
 
   .settings__user {
     

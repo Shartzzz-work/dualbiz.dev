@@ -2082,7 +2082,30 @@ header {
 .settings {
   max-width: 600px;
   margin: 0 auto;
-  padding: 3rem 1rem;
+}
+.settings .settings__businessman {
+  height: auto;
+}
+.settings .settings__businessman .block-input {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  background: white;
+  border-radius: 1rem;
+}
+.settings .settings__businessman .block-input h2 {
+  padding-bottom: 1rem;
+}
+.settings .settings__businessman .block-input label {
+  margin-bottom: 5px;
+}
+.settings .settings__businessman .block-input input,
+.settings .settings__businessman .block-input select {
+  height: 35px;
+  margin-bottom: 0.8rem;
+  border-radius: 4px;
+  padding-left: 0.5rem;
+  border-width: thin;
 }
 .settings .settings__user {
   height: auto;
