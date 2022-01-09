@@ -21,6 +21,35 @@ header {
   color: var.$col-logo;
 }
 
+.nav__menu__not-hamburger {
+
+  display: flex;
+  justify-content: space-between;
+  color: #bac2cf;
+
+  .nav-item {
+    margin-left: 2rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var.$col-text;
+  }
+
+  .nav-link:hover {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: solid underline var.$col-logo 4px;
+  }
+
+  .nav-link-active {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: solid underline var.$col-logo 4px;
+  }
+}
+
 .nav__menu {
   display: flex;
   justify-content: space-between;
