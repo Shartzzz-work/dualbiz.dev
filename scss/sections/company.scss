@@ -1,4 +1,4 @@
-@use '../var';
+@use "../var";
 
 .company__search {
   display: flex;
@@ -15,7 +15,7 @@
     color: #fff;
     font-size: 1.5rem;
     border-radius: 8px;
-    padding: 0.5rem;
+    padding: 0 0.5rem;
 
     option {
       color: #000;
@@ -267,6 +267,7 @@
     }
     .search_country {
       width: 50%;
+      margin-bottom: 0.5em;
     }
   }
 }
@@ -278,4 +279,3 @@
     }
   }
 }
-
