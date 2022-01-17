@@ -1145,6 +1145,10 @@ header {
     border-left: 0;
   }
 }
+.link-text {
+  color: #252933;
+}
+
 .circle {
   max-width: 1200px;
   margin: 0 auto;
@@ -1356,13 +1360,11 @@ header {
     justify-items: center;
     width: 100%;
     border-top: #313745 solid 3px;
-  }
-  .circle .card .block_actions img {
-    width: 30%;
+    padding: 0;
   }
   .circle .card .block_actions :nth-child(1),
 .circle .card .block_actions :nth-child(2) {
-    width: 50%;
+    width: 100%;
   }
 
   .circle__choiceme {

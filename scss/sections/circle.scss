@@ -1,5 +1,9 @@
 @use '../var';
 
+.link-text {
+  color: var.$col-dark;
+}
+
 .circle {
   max-width: 1200px;
   margin: 0 auto;
@@ -30,7 +34,7 @@
       position: relative;
       height: 100%;
       width: 100%;
-  
+
       img {
         position: absolute;
         display: block;
@@ -123,9 +127,9 @@
       }
 
     }
-    
+
   }
-  
+
 }
 
 .circle__choice {
@@ -255,14 +259,15 @@
         justify-items: center;
         width: 100%;
         border-top: var.$col_bg solid 3px;
+        padding: 0;
 
-        img {
-          width: 30%;
-        }
+        // img {
+        //   width: 30%;
+        // }
 
         :nth-child(1),
         :nth-child(2) {
-          width: 50%;
+          width: 100%;
         }
       }
     }
