@@ -1582,7 +1582,7 @@ header {
 .chat__messagies {
   border-radius: 5rem 1rem 1rem 2rem;
   background: #bac2cf;
-  height: 100%;
+  height: auto;
   display: grid;
   grid-template-rows: 6rem 1fr 5rem;
   z-index: 1;
@@ -1590,28 +1590,29 @@ header {
 
 .message__header {
   position: relative;
-  display: grid;
-  grid-template-columns: 60% 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background: #fff;
-  padding: 2rem;
+  padding: 0 2rem;
   border-radius: 5rem 1rem 0 0;
-  text-align: end;
   width: 100%;
 }
 .message__header h2 {
   font-size: 1.6rem;
 }
 .message__header .message__settings {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
+  position: relative;
+  display: grid;
+  justify-items: center;
   height: 70%;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
+  background: none;
+  border: none;
 }
 .message__header .message__settings img {
-  height: 70%;
+  width: 3em;
+  height: 100%;
 }
 
 .massage__footer {
@@ -1694,7 +1695,7 @@ header {
   z-index: 1;
   border-top: #bac2cf solid 3px;
   overflow-x: auto;
-  display: flex;
+  display: none;
 }
 .message__settings-active .message__settings_item {
   position: relative;
@@ -1767,7 +1768,6 @@ header {
   .chat__messagies {
     position: absolute;
     width: 100%;
-    height: 100%;
   }
 
   .message__header {
