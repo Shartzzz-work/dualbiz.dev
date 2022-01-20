@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html dir="auto" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Заголовок | текущей | страницы</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <!-- <meta name="color-scheme" content="light dark"> -->
+    <meta name="description" content="Мета описание сайта" />
+    <meta name="keywords" content="Ключевые, слова, сайта" />
+    <meta name="author" content="Shartzzz" />
+    <link rel="stylesheet" href="../style.css" />
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./assets/favicon/favicon.svg" type="image/svg+xml"> -->
+    <!-- <link rel="apple-touch-icon" href="./assets/favicon/favicon.png"> -->
+    <!-- <link rel="manifest" href="manifest.json"> -->
+  </head>
+
+  <body>
+    <header id="header">
+      <nav class="header__container">
+        <a href="/index.html" class="nav__logo">Dualism</a>
+        <ul class="nav__menu">
+          <li class="nav-item">
+            <a href="tasks.html" class="nav-link">Задачи</a>
+          </li>
+          <li class="nav-item">
+            <a href="business.html" class="nav-link">Бизнес</a>
+          </li>
+          <li class="nav-item">
+            <a href="company.html" class="nav-link">Компании</a>
+          </li>
+          <li class="nav-item">
+            <a href="circle.html" class="nav-link">Круг</a>
+          </li>
+          <li class="nav-item">
+            <a href="transaction.html" class="nav-link">Переводы</a>
+          </li>
+          <li class="nav-item">
+            <a href="messagies.html" class="nav-link-active">Сообщения</a>
+          </li>
+          <li class="nav-item">
+            <a href="help.html" class="nav-link">Помощь</a>
+          </li>
+        </ul>
+        <div class="nav__user">
+          <img
+            src="../assets/img/ic-users-default.svg"
+            alt="вход/выход"
+            class="nav__user-img user_icon"
+          />
+          <img
+            src="../assets/img/Settings.svg"
+            alt="настройки"
+            class="nav__user-img settings_icon"
+          />
+          <select name="language" class="nav__user-select">
+            <option>Ru</option>
+            <option>En</option>
+          </select>
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="settings">
+        <div class="settings__block">
+          <h2>Баллов на вашем аккаунте: <span>200</span></h2>
+          <ol>
+            <li>
+              1) Вы поддерживаете своей покупкой какую-нибудь компанию и она
+              переводит вам баллы. Таким образом вы можете получать баллы просто
+              так, перенеся часть своего спроса в круг выбранных вами компаний.
+            </li>
+            <li>
+              2) Если вы бизнесмен, то в начале использования сервиса, вы можете
+              купить баллы. Быллы могут вечно циркулировать в вашем кругу.
+            </li>
+          </ol>
+          <a href="#" class="button">Получить баллы</a>
+          <select class="settings__block_select">
+            <option>Основной язык</option>
+            <option>Русский</option>
+            <option>England</option>
+          </select>
+          <select class="settings__block_select">
+            <option>Страна</option>
+            <option>Россия</option>
+            <option>USA</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <main id="messagies">
+      <div class="messagies__container">
+        <header>
+          <h1>Messenger</h1>
+          <button class="toggle-chat">
+            <img
+              src="../assets/img/arrow_left.svg"
+              class="message__settings_img"
+              alt=""
+            />
+            <strong>1</strong>
+          </button>
+          <div class="chat__header">
+            <h2>Prstar</h2>
+          </div>
+        </header>
+        <nav>
+          <button name="messageContact" value="">
+            <img src="../assets/img/prstar1.jpg" alt="" />
+            <h2>Prstar <span>2</span></h2>
+            <p>Краткое описание компании</p>
+          </button>
+          <button name="messageContact" value="" class="active">
+            <img src="../assets/img/prstar1.jpg" alt="" />
+            <h2>Prstar</h2>
+            <p>Краткое описание компании</p>
+          </button>
+          <button name="messageContact" value="">
+            <img src="../assets/img/prstar1.jpg" alt="" />
+            <h2>Prstar</h2>
+            <p>Краткое описание компании</p>
+          </button>
+        </nav>
+        <div class="chat__block">
+          <div class="chat__body">
+            <div class="incoming__message">
+              <p>Входящее сообщение</p>
+              <i>"20.01.2022"</i>
+            </div>
+            <div class="outgoing__message">
+              <p>Исходящее сообщение</p>
+              <i>"20.01.2022"</i>
+            </div>
+          </div>
+
+          <form action="" method="">
+            <label
+              ><input type="text" name="" id="" placeholder="Введите сообщение"
+            /></label>
+            <button type="submit" value="">
+              <img src="../assets/img/55.svg" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

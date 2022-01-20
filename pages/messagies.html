@@ -1,356 +1,313 @@
 <!DOCTYPE html>
 <html dir="auto" lang="ru">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Заголовок | текущей | страницы</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-  <!-- <meta name="color-scheme" content="light dark"> -->
-  <meta name="description" content="Мета описание сайта">
-  <meta name="keywords" content="Ключевые, слова, сайта">
-  <meta name="author" content="Shartzzz">
-  <link rel="stylesheet" href="../style.css">
-  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Заголовок | текущей | страницы</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <!-- <meta name="color-scheme" content="light dark"> -->
+    <meta name="description" content="Мета описание сайта" />
+    <meta name="keywords" content="Ключевые, слова, сайта" />
+    <meta name="author" content="Shartzzz" />
+    <link rel="stylesheet" href="../style.css" />
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="./assets/favicon/favicon.svg" type="image/svg+xml"> -->
-  <!-- <link rel="apple-touch-icon" href="./assets/favicon/favicon.png"> -->
-  <!-- <link rel="manifest" href="manifest.json"> -->
-</head>
+    <!-- <link rel="apple-touch-icon" href="./assets/favicon/favicon.png"> -->
+    <!-- <link rel="manifest" href="manifest.json"> -->
+  </head>
 
-<body>
-  <header id="header">
-    <nav class="header__container">
-      <a href="/index.html" class="nav__logo">Dualism</a>
-      <ul class="nav__menu">
-        <li class="nav-item">
-          <a href="tasks.html" class="nav-link">Задачи</a>
-        </li>
-        <li class="nav-item">
-          <a href="business.html" class="nav-link">Бизнес</a>
-        </li>
-        <li class="nav-item">
-          <a href="company.html" class="nav-link">Компании</a>
-        </li>
-        <li class="nav-item">
-          <a href="circle.html" class="nav-link">Круг</a>
-        </li>
-        <li class="nav-item">
-          <a href="transaction.html" class="nav-link">Переводы</a>
-        </li>
-        <li class="nav-item">
-          <a href="messagies.html" class="nav-link-active">Сообщения</a>
-        </li>
-        <li class="nav-item">
-          <a href="help.html" class="nav-link">Помощь</a>
-        </li>
-      </ul>
-      <div class="nav__user">
-        <img src="../assets/img/ic-users-default.svg" alt="вход/выход" class="nav__user-img user_icon">
-        <img src="../assets/img/Settings.svg" alt="настройки" class="nav__user-img settings_icon">
-        <select name="language" class="nav__user-select">
-          <option>Ru</option>
-          <option>En</option>
-        </select>
+  <body>
+    <header id="header">
+      <nav class="header__container">
+        <a href="/index.html" class="nav__logo">Dualism</a>
+        <ul class="nav__menu">
+          <li class="nav-item">
+            <a href="tasks.html" class="nav-link">Задачи</a>
+          </li>
+          <li class="nav-item">
+            <a href="business.html" class="nav-link">Бизнес</a>
+          </li>
+          <li class="nav-item">
+            <a href="company.html" class="nav-link">Компании</a>
+          </li>
+          <li class="nav-item">
+            <a href="circle.html" class="nav-link">Круг</a>
+          </li>
+          <li class="nav-item">
+            <a href="transaction.html" class="nav-link">Переводы</a>
+          </li>
+          <li class="nav-item">
+            <a href="messagies.html" class="nav-link-active">Сообщения</a>
+          </li>
+          <li class="nav-item">
+            <a href="help.html" class="nav-link">Помощь</a>
+          </li>
+        </ul>
+        <div class="nav__user">
+          <img
+            src="../assets/img/ic-users-default.svg"
+            alt="вход/выход"
+            class="nav__user-img user_icon"
+          />
+          <img
+            src="../assets/img/Settings.svg"
+            alt="настройки"
+            class="nav__user-img settings_icon"
+          />
+          <select name="language" class="nav__user-select">
+            <option>Ru</option>
+            <option>En</option>
+          </select>
 
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="settings">
+        <div class="settings__block">
+          <h2>Баллов на вашем аккаунте: <span>200</span></h2>
+          <ol>
+            <li>
+              1) Вы поддерживаете своей покупкой какую-нибудь компанию и она
+              переводит вам баллы. Таким образом вы можете получать баллы просто
+              так, перенеся часть своего спроса в круг выбранных вами компаний.
+            </li>
+            <li>
+              2) Если вы бизнесмен, то в начале использования сервиса, вы можете
+              купить баллы. Быллы могут вечно циркулировать в вашем кругу.
+            </li>
+          </ol>
+          <a href="#" class="button">Получить баллы</a>
+          <select class="settings__block_select">
+            <option>Основной язык</option>
+            <option>Русский</option>
+            <option>England</option>
+          </select>
+          <select class="settings__block_select">
+            <option>Страна</option>
+            <option>Россия</option>
+            <option>USA</option>
+          </select>
         </div>
       </div>
-    </nav>
+    </header>
 
-    <div class="settings">
-      <div class="settings__block">
-        <h2>Баллов на вашем аккаунте: <span>200</span></h2>
-        <ol>
-          <li>1) Вы поддерживаете своей покупкой какую-нибудь компанию и она переводит вам баллы. Таким образом вы
-            можете
-            получать
-            баллы
-            просто так, перенеся часть своего спроса в круг выбранных вами компаний.</li>
-          <li>2) Если вы бизнесмен, то в начале использования сервиса, вы можете купить баллы. Быллы могут вечно
-            циркулировать в
-            вашем
-            кругу.</li>
-        </ol>
-        <a href="#" class="button">Получить баллы</a>
-        <select class="settings__block_select">
-          <option>Основной язык</option>
-          <option>Русский</option>
-          <option>England</option>
-        </select>
-        <select class="settings__block_select">
-          <option>Страна</option>
-          <option>Россия</option>
-          <option>USA</option>
-        </select>
-      </div>
-    </div>
-  </header>
+    <main id="messagies">
+      <section class="messagies">
+        <div class="chat__container">
+          <div class="chat__users">
+            <header>
+              <p>Messenger</p>
+            </header>
+            <div class="users">
+              <a href="/" class="user__item">
+                <img src="../assets/img/prstar1.jpg" alt="" />
+                <div>
+                  <h2>Prstar</h2>
+                  <p>Краткое описание компании</p>
+                </div>
+              </a>
 
-  <main id="messagies">
-    <section class="messagies">
-      <div class="chat__container">
-        <div class="chat__users">
-          <header>
-            <p>Messenger</p>
-          </header>
-          <div class="users">
-            <a href="/" class="user__item">
-              <img src="../assets/img/prstar1.jpg" alt="">
-              <div>
-                <h2>Prstar</h2>
-                <p>Краткое описание компании</p>
+              <div class="user__item">
+                <img src="../assets/img/prstar2.jpg" alt="" />
+                <div>
+                  <h2>Prstar</h2>
+                  <p>Краткое описание компании</p>
+                </div>
               </div>
-            </a>
 
-            <div class="user__item">
-              <img src="../assets/img/prstar2.jpg" alt="">
-              <div>
-                <h2>Prstar</h2>
-                <p>Краткое описание компании</p>
+              <div class="user__item user__item-active">
+                <img src="../assets/img/prstar4.jpg" alt="" />
+                <div>
+                  <h2>Active</h2>
+                  <p>Краткое описание компании</p>
+                </div>
               </div>
-            </div>
 
-            <div class="user__item user__item-active">
-              <img src="../assets/img/prstar4.jpg" alt="">
-              <div>
-                <h2>Active</h2>
-                <p>Краткое описание компании</p>
-              </div>
-            </div>
+              <a class="user__item">
+                <img src="../assets/img/prstar1.jpg" alt="" />
+                <div>
+                  <h2>Prstar</h2>
+                  <p>Краткое описание компании</p>
+                </div>
+              </a>
 
-            <a class="user__item">
-              <img src="../assets/img/prstar1.jpg" alt="">
-              <div>
-                <h2>Prstar</h2>
-                <p>Краткое описание компании</p>
+              <div class="user__item">
+                <img src="../assets/img/prstar2.jpg" alt="" />
+                <div>
+                  <h2>Prstar</h2>
+                  <p>Краткое описание компании</p>
+                </div>
               </div>
-            </a>
 
-            <div class="user__item">
-              <img src="../assets/img/prstar2.jpg" alt="">
-              <div>
-                <h2>Prstar</h2>
-                <p>Краткое описание компании</p>
+              <div class="user__item">
+                <img src="../assets/img/prstar4.jpg" alt="" />
+                <div>
+                  <h2>Prstar</h2>
+                  <p>Краткое описание компании</p>
+                </div>
               </div>
-            </div>
 
-            <div class="user__item">
-              <img src="../assets/img/prstar4.jpg" alt="">
-              <div>
-                <h2>Prstar</h2>
-                <p>Краткое описание компании</p>
+              <div class="user__item">
+                <img src="../assets/img/prstar4.jpg" alt="" />
+                <div>
+                  <h2>Prstar</h2>
+                  <p>Краткое описание компании</p>
+                </div>
               </div>
-            </div>
 
-            <div class="user__item">
-              <img src="../assets/img/prstar4.jpg" alt="">
-              <div>
-                <h2>Prstar</h2>
-                <p>Краткое описание компании</p>
+              <div class="user__item">
+                <img src="../assets/img/prstar4.jpg" alt="" />
+                <div>
+                  <h2>Prstar</h2>
+                  <p>Краткое описание компании</p>
+                </div>
               </div>
-            </div>
-
-            <div class="user__item">
-              <img src="../assets/img/prstar4.jpg" alt="">
-              <div>
-                <h2>Prstar</h2>
-                <p>Краткое описание компании</p>
+              <div class="user__item">
+                <img src="../assets/img/prstar4.jpg" alt="" />
+                <div>
+                  <h2>Prstar</h2>
+                  <p>Краткое описание компании</p>
+                </div>
               </div>
-            </div>
-            <div class="user__item">
-              <img src="../assets/img/prstar4.jpg" alt="">
-              <div>
-                <h2>Prstar</h2>
-                <p>Краткое описание компании</p>
+              <div class="user__item">
+                <img src="../assets/img/prstar4.jpg" alt="" />
+                <div>
+                  <h2>Prstar</h2>
+                  <p>Краткое описание компании</p>
+                </div>
               </div>
-            </div>
-            <div class="user__item">
-              <img src="../assets/img/prstar4.jpg" alt="">
-              <div>
-                <h2>Prstar</h2>
-                <p>Краткое описание компании</p>
+              <div class="user__item">
+                <img src="../assets/img/prstar4.jpg" alt="" />
+                <div>
+                  <h2>Prstar</h2>
+                  <p>Краткое описание компании</p>
+                </div>
               </div>
-            </div>
-            <div class="user__item">
-              <img src="../assets/img/prstar4.jpg" alt="">
-              <div>
-                <h2>Prstar</h2>
-                <p>Краткое описание компании</p>
+              <div class="user__item">
+                <img src="../assets/img/prstar4.jpg" alt="" />
+                <div>
+                  <h2>Prstar</h2>
+                  <p>Краткое описание компании</p>
+                </div>
               </div>
-            </div>
-            <div class="user__item">
-              <img src="../assets/img/prstar4.jpg" alt="">
-              <div>
-                <h2>Prstar</h2>
-                <p>Краткое описание компании</p>
+              <div class="user__item">
+                <img src="../assets/img/prstar4.jpg" alt="" />
+                <div>
+                  <h2>Prstar</h2>
+                  <p>Краткое описание компании</p>
+                </div>
               </div>
-            </div>
-            <div class="user__item">
-              <img src="../assets/img/prstar4.jpg" alt="">
-              <div>
-                <h2>Prstar</h2>
-                <p>Краткое описание компании</p>
+              <div class="user__item">
+                <img src="../assets/img/prstar4.jpg" alt="" />
+                <div>
+                  <h2>Prstar</h2>
+                  <p>Краткое описание компании</p>
+                </div>
               </div>
-            </div>
-            <div class="user__item">
-              <img src="../assets/img/prstar4.jpg" alt="">
-              <div>
-                <h2>Prstar</h2>
-                <p>Краткое описание компании</p>
-              </div>
-            </div>
-            <div class="user__item">
-              <img src="../assets/img/prstar4.jpg" alt="">
-              <div>
-                <h2>Prstar</h2>
-                <p>Краткое описание компании</p>
+              <div class="user__item">
+                <img src="../assets/img/prstar4.jpg" alt="" />
+                <div>
+                  <h2>Prstar</h2>
+                  <p>Краткое описание компании</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="chat__messagies">
-          <div class="message__header">
-            <h2>Prstar</h2>
-            <button class="message__settings">
-              <img src="../assets/img/66.svg" class="message__settings_img" alt="">
-              список компаний
-            </button>
-          </div>
-          <div class="message__body">
-          <div class="message__settings-active">
+          <div class="chat__messagies">
+            <div class="message__header">
+              <h2>Prstar</h2>
+              <button class="message__settings">
+                <img
+                  src="../assets/img/66.svg"
+                  class="message__settings_img"
+                  alt=""
+                />
+                список компаний
+              </button>
+            </div>
+            <div class="message__body">
+              <div class="message__settings-active">
                 <div class="message__settings_item">
-                  <img src="../assets/img/prstar1.jpg">
+                  <img src="../assets/img/prstar1.jpg" />
                   <h3 class="glass">Prstar</h3>
                 </div>
                 <div class="message__settings_item active">
-                  <img src="../assets/img/prstar2.jpg">
+                  <img src="../assets/img/prstar2.jpg" />
                   <h3 class="glass">Active</h3>
                 </div>
                 <div class="message__settings_item">
-                  <img src="../assets/img/prstar4.jpg">
+                  <img src="../assets/img/prstar4.jpg" />
                   <h3 class="glass">Prstar</h3>
                 </div>
                 <div class="message__settings_item">
-                  <img src="../assets/img/prstar4.jpg">
+                  <img src="../assets/img/prstar4.jpg" />
                   <h3 class="glass">Prstar</h3>
                 </div>
                 <div class="message__settings_item">
-                  <img src="../assets/img/prstar4.jpg">
+                  <img src="../assets/img/prstar4.jpg" />
                   <h3 class="glass">Prstar</h3>
                 </div>
                 <div class="message__settings_item">
-                  <img src="../assets/img/prstar4.jpg">
+                  <img src="../assets/img/prstar4.jpg" />
                   <h3 class="glass">Prstar</h3>
                 </div>
               </div>
-            <p class="input__bubble">
-              Первое входящее
-            </p>
-            <p class="input__bubble__after">
-              "23.05.2021"
-            </p>
+              <p class="input__bubble">Первое входящее</p>
+              <p class="input__bubble__after">"23.05.2021"</p>
 
-            <p class="input__bubble">
-              Второе
-            </p>
-            <p class="input__bubble__after">
-              "23.05.2021"
-            </p>
+              <p class="input__bubble">Второе</p>
+              <p class="input__bubble__after">"23.05.2021"</p>
 
-            <p class="output__bubble">
-              Первое исходящее
-            </p>
-            <p class="output__bubble__after">
-              "23.05.2021"
-            </p>
-            <p class="output__bubble">
-              Первое исходящее
-            </p>
-            <p class="output__bubble__after">
-              "23.05.2021"
-            </p>
-            <p class="output__bubble">
-              Первое исходящее
-            </p>
-            <p class="output__bubble__after">
-              "23.05.2021"
-            </p>
-            <p class="output__bubble">
-              Первое исходящее
-            </p>
-            <p class="output__bubble__after">
-              "23.05.2021"
-            </p>
-            <p class="output__bubble">
-              Первое исходящее
-            </p>
-            <p class="output__bubble__after">
-              "23.05.2021"
-            </p>
-            <p class="output__bubble">
-              Первое исходящее
-            </p>
-            <p class="output__bubble__after">
-              "23.05.2021"
-            </p>
-            <p class="output__bubble">
-              Первое исходящее
-            </p>
-            <p class="output__bubble__after">
-              "23.05.2021"
-            </p>
-            <p class="output__bubble">
-              Первое исходящее
-            </p>
-            <p class="output__bubble__after">
-              "23.05.2021"
-            </p>
-            <p class="output__bubble">
-              Первое исходящее
-            </p>
-            <p class="output__bubble__after">
-              "23.05.2021"
-            </p>
-            <p class="output__bubble">
-              Первое исходящее
-            </p>
-            <p class="output__bubble__after">
-              "23.05.2021"
-            </p>
-            <p class="output__bubble">
-              Первое исходящее
-            </p>
-            <p class="output__bubble__after">
-              "23.05.2021"
-            </p>
-            <p class="output__bubble">
-              Первое исходящее
-            </p>
-            <p class="output__bubble__after">
-              "23.05.2021"
-            </p>
-            <p class="output__bubble">
-              Первое исходящее
-            </p>
-            <p class="output__bubble__after">
-              "23.05.2021"
-            </p>
+              <p class="output__bubble">Первое исходящее</p>
+              <p class="output__bubble__after">"23.05.2021"</p>
+              <p class="output__bubble">Первое исходящее</p>
+              <p class="output__bubble__after">"23.05.2021"</p>
+              <p class="output__bubble">Первое исходящее</p>
+              <p class="output__bubble__after">"23.05.2021"</p>
+              <p class="output__bubble">Первое исходящее</p>
+              <p class="output__bubble__after">"23.05.2021"</p>
+              <p class="output__bubble">Первое исходящее</p>
+              <p class="output__bubble__after">"23.05.2021"</p>
+              <p class="output__bubble">Первое исходящее</p>
+              <p class="output__bubble__after">"23.05.2021"</p>
+              <p class="output__bubble">Первое исходящее</p>
+              <p class="output__bubble__after">"23.05.2021"</p>
+              <p class="output__bubble">Первое исходящее</p>
+              <p class="output__bubble__after">"23.05.2021"</p>
+              <p class="output__bubble">Первое исходящее</p>
+              <p class="output__bubble__after">"23.05.2021"</p>
+              <p class="output__bubble">Первое исходящее</p>
+              <p class="output__bubble__after">"23.05.2021"</p>
+              <p class="output__bubble">Первое исходящее</p>
+              <p class="output__bubble__after">"23.05.2021"</p>
+              <p class="output__bubble">Первое исходящее</p>
+              <p class="output__bubble__after">"23.05.2021"</p>
+              <p class="output__bubble">Первое исходящее</p>
+              <p class="output__bubble__after">"23.05.2021"</p>
+            </div>
+            <form
+              class="massage__footer"
+              method="post"
+              action="/messagies/view/create/#(markcompany.id)"
+            >
+              <input type="text" value="" placeholder="Введите сообщение" />
+              <button>
+                <img src="../assets/img/55.svg" alt="" />
+              </button>
+            </form>
           </div>
-          <form class="massage__footer" method="post" action="/messagies/view/create/#(markcompany.id)">
-            <input type="text" value="" placeholder="Введите сообщение">
-            <button>
-              <img src="../assets/img/55.svg" alt="">
-            </button>
-          </form>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <script src="../script.js"></script>
-</body>
-
+    <script src="../script.js"></script>
+  </body>
 </html>

@@ -61,6 +61,17 @@ class NavEvent {
           }
         }
 
+
+        // раскрытие компаний в мессенджере
+        if (
+          event.target.closest(".toggle-chat") ||
+          event.target.name === "messageContact"
+        ) {
+          document
+            .querySelector(".messagies__container")
+            .classList.toggle("active");
+        }
+
         if (event.target.classList.contains('tag__close') || event.target.classList.contains('tag__close_img')) {
           console.log(event.target);
           event.target.parentElement.parentElement.remove();
