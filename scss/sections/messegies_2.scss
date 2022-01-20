@@ -55,6 +55,7 @@
   nav {
     grid-area: 2 / 1 / 3 / 2;
     background: #1f2251;
+    border-radius: 0 0 1em 1em;
     // display: grid;
 
     // row-gap: 1em;
@@ -142,6 +143,7 @@
           top: 100%;
           margin-top: 0.3em;
           color: var.$col-dark;
+          font-size: .8em;
         }
       }
 
@@ -161,6 +163,7 @@
         background: var.$col-dark;
         border-radius: 2rem 0 2rem 2rem;
         color: var.$col-text;
+        margin-top: 1em;
 
         i {
           right: 0;
@@ -229,6 +232,7 @@
   .messagies__container {
     grid-template-columns: 1fr;
     overflow-x: hidden;
+    column-gap: 0;
 
     header {
       align-items: center;
@@ -269,7 +273,7 @@
     nav {
       display: block;
       grid-area: 2 / 1 / 3 / 2;
-      border-radius: 0 0 1em 1em;
+
       transform: translateX(-100%);
       transition: 300ms ease-in-out;
       z-index: 3;
